@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>HyperLand</title>
+    <link>https://hypersoweak.github.io/</link>
+    <description>Recent content on HyperLand</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 04 Feb 2024 21:49:23 +0800</lastBuildDate>
+    <atom:link href="https://hypersoweak.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>嗨</title>
+      <link>https://hypersoweak.github.io/posts/first/</link>
+      <pubDate>Sun, 04 Feb 2024 21:49:23 +0800</pubDate>
+      <guid>https://hypersoweak.github.io/posts/first/</guid>
+      <description>好耶終於把網站架好了 之後就可以把之前寫的文章都移過來了</description>
+    </item>
+  </channel>
+</rss>

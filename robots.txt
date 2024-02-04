@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://hypersoweak.github.io/sitemap.xml
