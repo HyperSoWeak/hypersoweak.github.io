@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on HyperLand</title>
-    <link>https://hypersoweak.github.io/posts/</link>
-    <description>Recent content in Posts on HyperLand</description>
+    <title>教學 on HyperLand</title>
+    <link>https://hypersoweak.github.io/categories/%E6%95%99%E5%AD%B8/</link>
+    <description>Recent content in 教學 on HyperLand</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Mon, 05 Feb 2024 14:04:12 +0800</lastBuildDate>
-    <atom:link href="https://hypersoweak.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hypersoweak.github.io/categories/%E6%95%99%E5%AD%B8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 VS Code 撰寫 Python 程式</title>
       <link>https://hypersoweak.github.io/posts/tutorials/python-with-vscode/</link>
       <pubDate>Mon, 05 Feb 2024 14:04:12 +0800</pubDate>
       <guid>https://hypersoweak.github.io/posts/tutorials/python-with-vscode/</guid>
       <description>本文適用於 Windows 環境。 下載並安裝 Python 到 Python 官網下載安裝檔，安裝最新版本。 安裝時勾選 Add python.exe to PATH，讓 Python 自動加入 Windows 環境變數。 完成後打開 terminal</description>
-    </item>
-    <item>
-      <title>嗨</title>
-      <link>https://hypersoweak.github.io/posts/idk/first/</link>
-      <pubDate>Sun, 04 Feb 2024 21:49:23 +0800</pubDate>
-      <guid>https://hypersoweak.github.io/posts/idk/first/</guid>
-      <description>好耶終於把網站架好了 之後就可以把之前寫的文章都移過來了</description>
     </item>
   </channel>
 </rss>

@@ -6,6 +6,21 @@
     <description>Recent content in Tags on HyperLand</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
+    <lastBuildDate>Mon, 05 Feb 2024 14:04:12 +0800</lastBuildDate>
     <atom:link href="https://hypersoweak.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python</title>
+      <link>https://hypersoweak.github.io/tags/python/</link>
+      <pubDate>Mon, 05 Feb 2024 14:04:12 +0800</pubDate>
+      <guid>https://hypersoweak.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VS Code</title>
+      <link>https://hypersoweak.github.io/tags/vs-code/</link>
+      <pubDate>Mon, 05 Feb 2024 14:04:12 +0800</pubDate>
+      <guid>https://hypersoweak.github.io/tags/vs-code/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
