@@ -26,34 +26,6 @@
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
 </noscript><meta property="og:title" content="使用 VS Code 撰寫 Python 程式" />
 <meta property="og:description" content="本文適用於 Windows 環境。 下載並安裝 Python 到 Python 官網下載安裝檔，安裝最新版本。 安裝時勾選 Add python.exe to PATH，讓 Python 自動加入 Windows 環境變數。 完成後打開 terminal" />
 <meta property="og:type" content="article" />
@@ -121,14 +93,10 @@
 </script>
 </head>
 
-<body class="" id="top">
+<body class=" dark" id="top">
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
+    if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
     }
 
 </script>
@@ -195,28 +163,89 @@
     <div class="post-meta"><span title='2024-02-05 14:04:12 +0800 CST'>2024-02-05</span>&nbsp;·&nbsp;2分鐘&nbsp;·&nbsp;624字&nbsp;·&nbsp;Hyper
 
 </div>
-  </header> <div class="toc">
-    <details >
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">Table of Contents</span>
-        </summary>
+  </header> <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">文章目錄</span>
+            </summary>
 
-        <div class="inner"><ul>
-                <li>
-                    <a href="#%e4%b8%8b%e8%bc%89%e4%b8%a6%e5%ae%89%e8%a3%9d-python" aria-label="下載並安裝 Python">下載並安裝 Python</a></li>
-                <li>
-                    <a href="#%e5%ae%89%e8%a3%9d-visual-studio-code-%e8%88%87-python-%e6%93%b4%e5%85%85%e5%a5%97%e4%bb%b6" aria-label="安裝 Visual Studio Code 與 Python 擴充套件">安裝 Visual Studio Code 與 Python 擴充套件</a></li>
-                <li>
-                    <a href="#%e4%b8%80%e9%8d%b5%e5%9f%b7%e8%a1%8c%e7%a8%8b%e5%bc%8f" aria-label="一鍵執行程式">一鍵執行程式</a></li>
-                <li>
-                    <a href="#%e5%a4%9a%e6%aa%94%e6%a1%88%e7%9a%84%e5%9f%b7%e8%a1%8c" aria-label="多檔案的執行">多檔案的執行</a></li>
-                <li>
-                    <a href="#python-%e8%99%9b%e6%93%ac%e7%92%b0%e5%a2%83" aria-label="Python 虛擬環境">Python 虛擬環境</a>
-                </li>
-            </ul>
-        </div>
-    </details>
-</div>
+            <div class="inner"><ul>
+                    <li>
+                        <a href="#%e4%b8%8b%e8%bc%89%e4%b8%a6%e5%ae%89%e8%a3%9d-python" aria-label="下載並安裝 Python">下載並安裝 Python</a></li>
+                    <li>
+                        <a href="#%e5%ae%89%e8%a3%9d-visual-studio-code-%e8%88%87-python-%e6%93%b4%e5%85%85%e5%a5%97%e4%bb%b6" aria-label="安裝 Visual Studio Code 與 Python 擴充套件">安裝 Visual Studio Code 與 Python 擴充套件</a></li>
+                    <li>
+                        <a href="#%e4%b8%80%e9%8d%b5%e5%9f%b7%e8%a1%8c%e7%a8%8b%e5%bc%8f" aria-label="一鍵執行程式">一鍵執行程式</a></li>
+                    <li>
+                        <a href="#%e5%a4%9a%e6%aa%94%e6%a1%88%e7%9a%84%e5%9f%b7%e8%a1%8c" aria-label="多檔案的執行">多檔案的執行</a></li>
+                    <li>
+                        <a href="#python-%e8%99%9b%e6%93%ac%e7%92%b0%e5%a2%83" aria-label="Python 虛擬環境">Python 虛擬環境</a>
+                    </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;   
+    }
+</script>
 
   <div class="post-content"><p>本文適用於 Windows 環境。</p>
 <h2 id="下載並安裝-python">下載並安裝 Python<a hidden class="anchor" aria-hidden="true" href="#下載並安裝-python">#</a></h2>
