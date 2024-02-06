@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>生活 on HyperLand</title>
-    <link>https://hypersoweak.github.io/categories/%E7%94%9F%E6%B4%BB/</link>
-    <description>Recent content in 生活 on HyperLand</description>
+    <title>台大資工 on HyperLand</title>
+    <link>https://hypersoweak.github.io/tags/%E5%8F%B0%E5%A4%A7%E8%B3%87%E5%B7%A5/</link>
+    <description>Recent content in 台大資工 on HyperLand</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Tue, 06 Feb 2024 12:30:17 +0800</lastBuildDate>
-    <atom:link href="https://hypersoweak.github.io/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hypersoweak.github.io/tags/%E5%8F%B0%E5%A4%A7%E8%B3%87%E5%B7%A5/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在台大資工的半年 :)</title>
       <link>https://hypersoweak.github.io/posts/life/new-to-ntu/</link>
       <pubDate>Tue, 06 Feb 2024 12:30:17 +0800</pubDate>
       <guid>https://hypersoweak.github.io/posts/life/new-to-ntu/</guid>
       <description>不知不覺間，仍然在懷念著高中生活，大學卻已經過了一整個學期。 修課心得 劉邦鋒 計算機程式設計 據說是大一最可怕的課，甚至還沒開學就先寄了一封恐嚇信</description>
-    </item>
-    <item>
-      <title>嗨</title>
-      <link>https://hypersoweak.github.io/posts/life/first/</link>
-      <pubDate>Sun, 04 Feb 2024 21:49:23 +0800</pubDate>
-      <guid>https://hypersoweak.github.io/posts/life/first/</guid>
-      <description>好耶終於把網站架好了 之後就可以把之前寫的文章都移過來了</description>
     </item>
   </channel>
 </rss>

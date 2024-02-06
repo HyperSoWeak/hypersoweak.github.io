@@ -6,8 +6,15 @@
     <description>Recent content in Posts on HyperLand</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 05 Feb 2024 14:04:12 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 06 Feb 2024 12:30:17 +0800</lastBuildDate>
     <atom:link href="https://hypersoweak.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在台大資工的半年 :)</title>
+      <link>https://hypersoweak.github.io/posts/life/new-to-ntu/</link>
+      <pubDate>Tue, 06 Feb 2024 12:30:17 +0800</pubDate>
+      <guid>https://hypersoweak.github.io/posts/life/new-to-ntu/</guid>
+      <description>不知不覺間，仍然在懷念著高中生活，大學卻已經過了一整個學期。 修課心得 劉邦鋒 計算機程式設計 據說是大一最可怕的課，甚至還沒開學就先寄了一封恐嚇信</description>
+    </item>
     <item>
       <title>使用 VS Code 撰寫 Python 程式</title>
       <link>https://hypersoweak.github.io/posts/tutorials/python-with-vscode/</link>
