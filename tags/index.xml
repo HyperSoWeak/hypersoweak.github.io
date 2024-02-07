@@ -6,13 +6,20 @@
     <description>Recent content in Tags on HyperLand</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 06 Feb 2024 12:30:17 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 07 Feb 2024 02:01:41 +0800</lastBuildDate>
     <atom:link href="https://hypersoweak.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>台大資工</title>
-      <link>https://hypersoweak.github.io/tags/%E5%8F%B0%E5%A4%A7%E8%B3%87%E5%B7%A5/</link>
+      <title>VS Code</title>
+      <link>https://hypersoweak.github.io/tags/vs-code/</link>
+      <pubDate>Wed, 07 Feb 2024 02:01:41 +0800</pubDate>
+      <guid>https://hypersoweak.github.io/tags/vs-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NTU</title>
+      <link>https://hypersoweak.github.io/tags/ntu/</link>
       <pubDate>Tue, 06 Feb 2024 12:30:17 +0800</pubDate>
-      <guid>https://hypersoweak.github.io/tags/%E5%8F%B0%E5%A4%A7%E8%B3%87%E5%B7%A5/</guid>
+      <guid>https://hypersoweak.github.io/tags/ntu/</guid>
       <description></description>
     </item>
     <item>
@@ -20,13 +27,6 @@
       <link>https://hypersoweak.github.io/tags/python/</link>
       <pubDate>Mon, 05 Feb 2024 14:04:12 +0800</pubDate>
       <guid>https://hypersoweak.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>VS Code</title>
-      <link>https://hypersoweak.github.io/tags/vs-code/</link>
-      <pubDate>Mon, 05 Feb 2024 14:04:12 +0800</pubDate>
-      <guid>https://hypersoweak.github.io/tags/vs-code/</guid>
       <description></description>
     </item>
   </channel>

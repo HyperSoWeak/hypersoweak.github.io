@@ -6,8 +6,15 @@
     <description>Recent content in VS Code on HyperLand</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 05 Feb 2024 14:04:12 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 07 Feb 2024 02:01:41 +0800</lastBuildDate>
     <atom:link href="https://hypersoweak.github.io/tags/vs-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>常用 VS Code 快捷鍵</title>
+      <link>https://hypersoweak.github.io/posts/tutorials/vscode-shortcuts/</link>
+      <pubDate>Wed, 07 Feb 2024 02:01:41 +0800</pubDate>
+      <guid>https://hypersoweak.github.io/posts/tutorials/vscode-shortcuts/</guid>
+      <description>VS Code 有非常多快捷鍵，我整理了一些較常用的，可以加速工作效率。 編輯程式 快捷鍵 功能 Ctrl+/ 註解 / 取消註解（可以一次註解多行，超級好用） Shift+Alt+Up/Down 複製行至上/下</description>
+    </item>
     <item>
       <title>使用 VS Code 撰寫 Python 程式</title>
       <link>https://hypersoweak.github.io/posts/tutorials/python-with-vscode/</link>

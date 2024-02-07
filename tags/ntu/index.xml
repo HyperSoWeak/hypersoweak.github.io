@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>NTU on HyperLand</title>
+    <link>https://hypersoweak.github.io/tags/ntu/</link>
+    <description>Recent content in NTU on HyperLand</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 06 Feb 2024 12:30:17 +0800</lastBuildDate>
+    <atom:link href="https://hypersoweak.github.io/tags/ntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在台大資工的半年 :)</title>
+      <link>https://hypersoweak.github.io/posts/life/new-to-ntu/</link>
+      <pubDate>Tue, 06 Feb 2024 12:30:17 +0800</pubDate>
+      <guid>https://hypersoweak.github.io/posts/life/new-to-ntu/</guid>
+      <description>不知不覺間，仍然在懷念著高中生活，大學卻已經過了一整個學期。 修課心得 劉邦鋒 計算機程式設計 據說是大一最可怕的課，甚至還沒開學就先寄了一封恐嚇信</description>
+    </item>
+  </channel>
+</rss>
