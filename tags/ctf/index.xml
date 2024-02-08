@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>CTF on HyperLand</title>
+    <link>https://hypersoweak.github.io/tags/ctf/</link>
+    <description>Recent content in CTF on HyperLand</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Thu, 08 Feb 2024 05:13:50 +0800</lastBuildDate>
+    <atom:link href="https://hypersoweak.github.io/tags/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NASA24 HW-0 題解</title>
+      <link>https://hypersoweak.github.io/posts/tutorials/nasa24-hw0/</link>
+      <pubDate>Thu, 08 Feb 2024 05:13:50 +0800</pubDate>
+      <guid>https://hypersoweak.github.io/posts/tutorials/nasa24-hw0/</guid>
+      <description>使用 Windows 10 22H2 + VirtualBox 7.0.12 題目連結 System Administration Part p1. Super Auto Penguin! 你觀察這隻企鵝,發現他的背後有一個隱藏式的螢幕和鍵盤,看起來需要有帳號密碼來登入。好在筆電上面已經有一</description>
+    </item>
+  </channel>
+</rss>

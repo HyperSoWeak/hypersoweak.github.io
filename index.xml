@@ -6,8 +6,15 @@
     <description>Recent content on HyperLand</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 07 Feb 2024 02:01:41 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 08 Feb 2024 05:13:50 +0800</lastBuildDate>
     <atom:link href="https://hypersoweak.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NASA24 HW-0 題解</title>
+      <link>https://hypersoweak.github.io/posts/tutorials/nasa24-hw0/</link>
+      <pubDate>Thu, 08 Feb 2024 05:13:50 +0800</pubDate>
+      <guid>https://hypersoweak.github.io/posts/tutorials/nasa24-hw0/</guid>
+      <description>使用 Windows 10 22H2 + VirtualBox 7.0.12 題目連結 System Administration Part p1. Super Auto Penguin! 你觀察這隻企鵝,發現他的背後有一個隱藏式的螢幕和鍵盤,看起來需要有帳號密碼來登入。好在筆電上面已經有一</description>
+    </item>
     <item>
       <title>常用 VS Code 快捷鍵</title>
       <link>https://hypersoweak.github.io/posts/tutorials/vscode-shortcuts/</link>
