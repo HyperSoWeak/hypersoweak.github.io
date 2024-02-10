@@ -2,25 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hypersoweak.github.io/tags/bash/</loc>
+    <lastmod>2024-02-08T15:34:05+08:00</lastmod>
+  </url><url>
     <loc>https://hypersoweak.github.io/categories/</loc>
-    <lastmod>2024-02-07T02:01:41+08:00</lastmod>
+    <lastmod>2024-02-08T15:34:05+08:00</lastmod>
   </url><url>
     <loc>https://hypersoweak.github.io/</loc>
-    <lastmod>2024-02-07T02:01:41+08:00</lastmod>
+    <lastmod>2024-02-08T15:34:05+08:00</lastmod>
+  </url><url>
+    <loc>https://hypersoweak.github.io/tags/linux/</loc>
+    <lastmod>2024-02-08T15:34:05+08:00</lastmod>
+  </url><url>
+    <loc>https://hypersoweak.github.io/posts/tutorials/linux-file-permission/</loc>
+    <lastmod>2024-02-08T15:34:05+08:00</lastmod>
   </url><url>
     <loc>https://hypersoweak.github.io/posts/</loc>
-    <lastmod>2024-02-07T02:01:41+08:00</lastmod>
+    <lastmod>2024-02-08T15:34:05+08:00</lastmod>
   </url><url>
     <loc>https://hypersoweak.github.io/tags/</loc>
-    <lastmod>2024-02-07T02:01:41+08:00</lastmod>
+    <lastmod>2024-02-08T15:34:05+08:00</lastmod>
+  </url><url>
+    <loc>https://hypersoweak.github.io/categories/%E6%95%99%E5%AD%B8/</loc>
+    <lastmod>2024-02-08T15:34:05+08:00</lastmod>
   </url><url>
     <loc>https://hypersoweak.github.io/tags/vs-code/</loc>
     <lastmod>2024-02-07T02:01:41+08:00</lastmod>
   </url><url>
     <loc>https://hypersoweak.github.io/posts/tutorials/vscode-shortcuts/</loc>
-    <lastmod>2024-02-07T02:01:41+08:00</lastmod>
-  </url><url>
-    <loc>https://hypersoweak.github.io/categories/%E6%95%99%E5%AD%B8/</loc>
     <lastmod>2024-02-07T02:01:41+08:00</lastmod>
   </url><url>
     <loc>https://hypersoweak.github.io/tags/ntu/</loc>

@@ -6,8 +6,15 @@
     <description>Recent content in Posts on HyperLand</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 07 Feb 2024 02:01:41 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 08 Feb 2024 15:34:05 +0800</lastBuildDate>
     <atom:link href="https://hypersoweak.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 修改檔案權限</title>
+      <link>https://hypersoweak.github.io/posts/tutorials/linux-file-permission/</link>
+      <pubDate>Thu, 08 Feb 2024 15:34:05 +0800</pubDate>
+      <guid>https://hypersoweak.github.io/posts/tutorials/linux-file-permission/</guid>
+      <description>有時候我們想要執行或存取某個檔案，卻出現 Permission denied，就會直接 chmod +x [file]或chmod 777 [file]，於是，我們來談談檔案權限吧！ 權限</description>
+    </item>
     <item>
       <title>常用 VS Code 快捷鍵</title>
       <link>https://hypersoweak.github.io/posts/tutorials/vscode-shortcuts/</link>

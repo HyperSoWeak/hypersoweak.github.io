@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>常用 VS Code 快捷鍵 | HyperLand</title>
-<meta name="keywords" content="VS Code">
-<meta name="description" content="VS Code 有非常多快捷鍵，我整理了一些較常用的，可以加速工作效率。 編輯程式 快捷鍵 功能 Ctrl&#43;/ 註解 / 取消註解（可以一次註解多行，超級好用） Shift&#43;Alt&#43;Up/Down 複製行至上/下">
+<title>Linux 修改檔案權限 | HyperLand</title>
+<meta name="keywords" content="Linux, Bash">
+<meta name="description" content="有時候我們想要執行或存取某個檔案，卻出現 Permission denied，就會直接 chmod &#43;x [file]或chmod 777 [file]，於是，我們來談談檔案權限吧！ 權限">
 <meta name="author" content="Hyper">
-<link rel="canonical" href="https://hypersoweak.github.io/posts/tutorials/vscode-shortcuts/">
+<link rel="canonical" href="https://hypersoweak.github.io/posts/tutorials/linux-file-permission/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://hypersoweak.github.io/img/hypersoweak-circle.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://hypersoweak.github.io/favicon-16x16.png">
@@ -26,16 +26,16 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="常用 VS Code 快捷鍵" />
-<meta property="og:description" content="VS Code 有非常多快捷鍵，我整理了一些較常用的，可以加速工作效率。 編輯程式 快捷鍵 功能 Ctrl&#43;/ 註解 / 取消註解（可以一次註解多行，超級好用） Shift&#43;Alt&#43;Up/Down 複製行至上/下" />
+</noscript><meta property="og:title" content="Linux 修改檔案權限" />
+<meta property="og:description" content="有時候我們想要執行或存取某個檔案，卻出現 Permission denied，就會直接 chmod &#43;x [file]或chmod 777 [file]，於是，我們來談談檔案權限吧！ 權限" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://hypersoweak.github.io/posts/tutorials/vscode-shortcuts/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-02-07T02:01:41+08:00" />
-<meta property="article:modified_time" content="2024-02-07T02:01:41+08:00" />
+<meta property="og:url" content="https://hypersoweak.github.io/posts/tutorials/linux-file-permission/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-02-08T15:34:05+08:00" />
+<meta property="article:modified_time" content="2024-02-08T15:34:05+08:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="常用 VS Code 快捷鍵"/>
-<meta name="twitter:description" content="VS Code 有非常多快捷鍵，我整理了一些較常用的，可以加速工作效率。 編輯程式 快捷鍵 功能 Ctrl&#43;/ 註解 / 取消註解（可以一次註解多行，超級好用） Shift&#43;Alt&#43;Up/Down 複製行至上/下"/>
+<meta name="twitter:title" content="Linux 修改檔案權限"/>
+<meta name="twitter:description" content="有時候我們想要執行或存取某個檔案，卻出現 Permission denied，就會直接 chmod &#43;x [file]或chmod 777 [file]，於是，我們來談談檔案權限吧！ 權限"/>
 
 
 <script type="application/ld+json">
@@ -52,8 +52,8 @@
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "常用 VS Code 快捷鍵",
-      "item": "https://hypersoweak.github.io/posts/tutorials/vscode-shortcuts/"
+      "name": "Linux 修改檔案權限",
+      "item": "https://hypersoweak.github.io/posts/tutorials/linux-file-permission/"
     }
   ]
 }
@@ -62,24 +62,24 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "常用 VS Code 快捷鍵",
-  "name": "常用 VS Code 快捷鍵",
-  "description": "VS Code 有非常多快捷鍵，我整理了一些較常用的，可以加速工作效率。 編輯程式 快捷鍵 功能 Ctrl+/ 註解 / 取消註解（可以一次註解多行，超級好用） Shift+Alt+Up/Down 複製行至上/下",
+  "headline": "Linux 修改檔案權限",
+  "name": "Linux 修改檔案權限",
+  "description": "有時候我們想要執行或存取某個檔案，卻出現 Permission denied，就會直接 chmod +x [file]或chmod 777 [file]，於是，我們來談談檔案權限吧！ 權限",
   "keywords": [
-    "VS Code"
+    "Linux", "Bash"
   ],
-  "articleBody": " VS Code 有非常多快捷鍵，我整理了一些較常用的，可以加速工作效率。\n編輯程式 快捷鍵 功能 Ctrl+/ 註解 / 取消註解（可以一次註解多行，超級好用） Shift+Alt+Up/Down 複製行至上/下 Alt+Up/Down 移動行 Ctrl+D 將下一個搜尋符合項新增至選擇範圍（大量改變數名稱） Ctrl+X 刪除行（其實是剪下，但拿來當刪除很方便） Ctrl+Shift+K 刪除行 Ctrl+K -\u003e Ctrl+C 註解 Ctrl+K -\u003e Ctrl+U 取消註解 Ctrl+F 尋找 💡Tip Ctrl+K是VS Code的前置快捷鍵，先按下之後再按其他快捷鍵會有不同效果（可能因為快捷鍵太多所以才有這個功能）\n版面 快捷鍵 功能 Ctrl+Enter 創建新行（游標在中間也會直接跳到新行） Ctrl+` 開啟 / 關閉終端機 Ctrl+Up/Down 移動頁面 Ctrl+K -\u003e W 關閉所有分頁 Ctrl+K -\u003e U 關閉已儲存分頁 Alt+Left/Right 切換分頁 Ctrl+P 跳轉到文件（如果專案很多文件就可以直接搜尋） Ctrl+Shift+P 開啟 VS Code 命令列 執行程式 (Code Runner) 快捷鍵 功能 Ctrl+Alt+N 執行程式 Ctrl+Alt+M 停止程式 Ctrl+Alt+K 執行自定義命令（超實用） 參考資料 Visual Studio Code Key Bindings\nYoutube - Code faster with these VS Code shortcuts\n",
-  "wordCount" : "349",
+  "articleBody": " 有時候我們想要執行或存取某個檔案，卻出現 Permission denied，就會直接\nchmod +x [file]或chmod 777 [file]，於是，我們來談談檔案權限吧！\n權限代號與檔案分類 輸入ls -l指令會發現前面有類似-rw-rw-r--由r w x組成的字串，其實這代表檔案的類型與權限。 第一個字元代表檔案的類型：\nd 代表目錄 (資料夾) - 一般檔案，包含純文字、binary、data l 連結檔 (link file)，類似 Windows 的捷徑 b 區塊設備檔 (儲存用設備，如硬碟) c 字元設備檔 (序列埠周邊設備，如鍵盤、滑鼠) s 資料接口檔 p 資料輸送檔 最常見的就是d跟-啦。\n而接下來的字元以3個為一組，共三組，依次代表擁有者、擁有者的群組、其餘帳號的權限。\n權限有分為三種：\nr 讀取 (目錄則是可以看到裡面檔案的權限) w 寫入 x 執行 (目錄則是可以進入的權限) 舉個例子，-rw-r--r--代表是一般檔案，自己可讀寫，同群組跟其他人都只能讀。\n講完了權限的分類，接下來來講如何更改權限。\nchmod 更改存取權限 首先我們來看一個指令\nchmod 765 [file] 中間的 765 是什麼意思呢，他分別對應了上面所講的，擁有者、擁有者的群組、其餘帳號的權限。\n這就是設計者的巧思了，其中r,w,x分別是4,2,1，所以7 = 4+2+1就是可讀、可寫、可執行，以此類推，6 是可讀、可寫、不可執行，5 就是可讀、不可寫、可執行。\n回到上面的例子，如果要把檔案權限改成-rw-r--r--那麼對應的指令就是\nchmod 644 [file] 另外，chmod還有另一種用參數指定的寫法：\nchmod [who] [+/-/=] [rwx] [who]可以填入u(user 擁有者)、g(group 擁有者同群組)、o(others 其餘帳號)、a(all 所有帳號) +是增加權限；-是取消權限；=是直接設定 chmod ug-x [file] 就是取消擁有者及同群組帳號執行的權限\n那如果要一次更動目錄及以下的所有檔案，只要加上-R(recursive) 就可以了\n(通常是-r，但因為被用掉了所以變大寫)\nchown 更改擁有者 用法是\nchown [user] [file] 就會把 file 的擁有者改成 user 了\n要注意的是這同時會改變到權限。\n",
+  "wordCount" : "809",
   "inLanguage": "en",
-  "datePublished": "2024-02-07T02:01:41+08:00",
-  "dateModified": "2024-02-07T02:01:41+08:00",
+  "datePublished": "2024-02-08T15:34:05+08:00",
+  "dateModified": "2024-02-08T15:34:05+08:00",
   "author":{
     "@type": "Person",
     "name": "Hyper"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://hypersoweak.github.io/posts/tutorials/vscode-shortcuts/"
+    "@id": "https://hypersoweak.github.io/posts/tutorials/linux-file-permission/"
   },
   "publisher": {
     "@type": "Organization",
@@ -158,13 +158,14 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://hypersoweak.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://hypersoweak.github.io/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
-      常用 VS Code 快捷鍵
+      Linux 修改檔案權限
     </h1>
-    <div class="post-meta"><span title='2024-02-07 02:01:41 +0800 CST'>2024-02-07</span>&nbsp;·&nbsp;1分鐘&nbsp;·&nbsp;349字&nbsp;·&nbsp;Hyper
+    <div class="post-meta"><span title='2024-02-08 15:34:05 +0800 CST'>2024-02-08</span>&nbsp;·&nbsp;2分鐘&nbsp;·&nbsp;809字&nbsp;·&nbsp;Hyper
 
 </div>
     <ul class="post-tags">
-      <li><a href="https://hypersoweak.github.io/tags/vs-code/">VS Code</a></li>
+      <li><a href="https://hypersoweak.github.io/tags/linux/">Linux</a></li>
+      <li><a href="https://hypersoweak.github.io/tags/bash/">Bash</a></li>
     </ul>
   </header> <aside id="toc-container" class="toc-container wide">
     <div class="toc">
@@ -175,13 +176,11 @@
 
             <div class="inner"><ul>
                     <li>
-                        <a href="#%e7%b7%a8%e8%bc%af%e7%a8%8b%e5%bc%8f" aria-label="編輯程式">編輯程式</a></li>
+                        <a href="#%e6%ac%8a%e9%99%90%e4%bb%a3%e8%99%9f%e8%88%87%e6%aa%94%e6%a1%88%e5%88%86%e9%a1%9e" aria-label="權限代號與檔案分類">權限代號與檔案分類</a></li>
                     <li>
-                        <a href="#%e7%89%88%e9%9d%a2" aria-label="版面">版面</a></li>
+                        <a href="#chmod-%e6%9b%b4%e6%94%b9%e5%ad%98%e5%8f%96%e6%ac%8a%e9%99%90" aria-label="chmod 更改存取權限">chmod 更改存取權限</a></li>
                     <li>
-                        <a href="#%e5%9f%b7%e8%a1%8c%e7%a8%8b%e5%bc%8f-code-runner" aria-label="執行程式 (Code Runner)">執行程式 (Code Runner)</a></li>
-                    <li>
-                        <a href="#%e5%8f%83%e8%80%83%e8%b3%87%e6%96%99" aria-label="參考資料">參考資料</a>
+                        <a href="#chown-%e6%9b%b4%e6%94%b9%e6%93%81%e6%9c%89%e8%80%85" aria-label="chown 更改擁有者">chown 更改擁有者</a>
                     </li>
                 </ul>
             </div>
@@ -249,149 +248,69 @@
 </script>
 
   <div class="post-content"><blockquote>
-<p>VS Code 有非常多快捷鍵，我整理了一些較常用的，可以加速工作效率。</p>
+<p>有時候我們想要執行或存取某個檔案，卻出現 Permission denied，就會直接<br>
+<code>chmod +x [file]</code>或<code>chmod 777 [file]</code>，於是，我們來談談檔案權限吧！</p>
 </blockquote>
-<h2 id="編輯程式">編輯程式<a hidden class="anchor" aria-hidden="true" href="#編輯程式">#</a></h2>
-<table>
-<thead>
-<tr>
-<th>快捷鍵</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Ctrl+/</strong></td>
-<td>註解 / 取消註解（可以一次註解多行，超級好用）</td>
-</tr>
-<tr>
-<td><strong>Shift+Alt+Up/Down</strong></td>
-<td>複製行至上/下</td>
-</tr>
-<tr>
-<td><strong>Alt+Up/Down</strong></td>
-<td>移動行</td>
-</tr>
-<tr>
-<td><strong>Ctrl+D</strong></td>
-<td>將下一個搜尋符合項新增至選擇範圍（大量改變數名稱）</td>
-</tr>
-<tr>
-<td>Ctrl+X</td>
-<td>刪除行（其實是剪下，但拿來當刪除很方便）</td>
-</tr>
-<tr>
-<td>Ctrl+Shift+K</td>
-<td>刪除行</td>
-</tr>
-<tr>
-<td>Ctrl+K -&gt; Ctrl+C</td>
-<td>註解</td>
-</tr>
-<tr>
-<td>Ctrl+K -&gt; Ctrl+U</td>
-<td>取消註解</td>
-</tr>
-<tr>
-<td>Ctrl+F</td>
-<td>尋找</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p><strong>💡Tip</strong>
-<code>Ctrl+K</code>是VS Code的前置快捷鍵，先按下之後再按其他快捷鍵會有不同效果（可能因為快捷鍵太多所以才有這個功能）</p>
-</blockquote>
-<hr>
-<h2 id="版面">版面<a hidden class="anchor" aria-hidden="true" href="#版面">#</a></h2>
-<table>
-<thead>
-<tr>
-<th>快捷鍵</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Ctrl+Enter</strong></td>
-<td>創建新行（游標在中間也會直接跳到新行）</td>
-</tr>
-<tr>
-<td><strong>Ctrl+`</strong></td>
-<td>開啟 / 關閉終端機</td>
-</tr>
-<tr>
-<td>Ctrl+Up/Down</td>
-<td>移動頁面</td>
-</tr>
-<tr>
-<td>Ctrl+K -&gt; W</td>
-<td>關閉所有分頁</td>
-</tr>
-<tr>
-<td>Ctrl+K -&gt; U</td>
-<td>關閉已儲存分頁</td>
-</tr>
-<tr>
-<td>Alt+Left/Right</td>
-<td>切換分頁</td>
-</tr>
-<tr>
-<td>Ctrl+P</td>
-<td>跳轉到文件（如果專案很多文件就可以直接搜尋）</td>
-</tr>
-<tr>
-<td>Ctrl+Shift+P</td>
-<td>開啟 VS Code 命令列</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id="執行程式-code-runner">執行程式 (Code Runner)<a hidden class="anchor" aria-hidden="true" href="#執行程式-code-runner">#</a></h2>
-<table>
-<thead>
-<tr>
-<th>快捷鍵</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ctrl+Alt+N</td>
-<td>執行程式</td>
-</tr>
-<tr>
-<td>Ctrl+Alt+M</td>
-<td>停止程式</td>
-</tr>
-<tr>
-<td><strong>Ctrl+Alt+K</strong></td>
-<td>執行自定義命令（超實用）</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id="參考資料">參考資料<a hidden class="anchor" aria-hidden="true" href="#參考資料">#</a></h2>
-<p><a href="https://code.visualstudio.com/docs/getstarted/keybindings">Visual Studio Code Key Bindings</a><br>
-<a href="https://youtu.be/dLzMz2Jk_qU">Youtube - Code faster with these VS Code shortcuts</a></p>
+<h2 id="權限代號與檔案分類">權限代號與檔案分類<a hidden class="anchor" aria-hidden="true" href="#權限代號與檔案分類">#</a></h2>
+<p>輸入<code>ls -l</code>指令會發現前面有類似<code>-rw-rw-r--</code>由<code>r w x</code>組成的字串，其實這代表檔案的類型與權限。
+<img loading="lazy" src="images/ls.png" alt=""  />
+</p>
+<p>第一個字元代表檔案的類型：</p>
+<ul>
+<li><code>d</code> 代表目錄 (資料夾)</li>
+<li><code>-</code> 一般檔案，包含純文字、binary、data</li>
+<li><code>l</code> 連結檔 (link file)，類似 Windows 的捷徑</li>
+<li><code>b</code> 區塊設備檔 (儲存用設備，如硬碟)</li>
+<li><code>c</code> 字元設備檔 (序列埠周邊設備，如鍵盤、滑鼠)</li>
+<li><code>s</code> 資料接口檔</li>
+<li><code>p</code> 資料輸送檔</li>
+</ul>
+<p>最常見的就是<code>d</code>跟<code>-</code>啦。</p>
+<p>而接下來的字元以3個為一組，共三組，依次代表擁有者、擁有者的群組、其餘帳號的權限。<br>
+權限有分為三種：</p>
+<ul>
+<li><code>r</code> 讀取 (目錄則是可以看到裡面檔案的權限)</li>
+<li><code>w</code> 寫入</li>
+<li><code>x</code> 執行 (目錄則是可以進入的權限)</li>
+</ul>
+<p>舉個例子，<code>-rw-r--r--</code>代表是一般檔案，自己可讀寫，同群組跟其他人都只能讀。</p>
+<p>講完了權限的分類，接下來來講如何更改權限。</p>
+<h2 id="chmod-更改存取權限">chmod 更改存取權限<a hidden class="anchor" aria-hidden="true" href="#chmod-更改存取權限">#</a></h2>
+<p>首先我們來看一個指令</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod <span class="m">765</span> <span class="o">[</span>file<span class="o">]</span>
+</span></span></code></pre></div><p>中間的 765 是什麼意思呢，他分別對應了上面所講的，擁有者、擁有者的群組、其餘帳號的權限。</p>
+<p>這就是設計者的巧思了，其中<code>r</code>,<code>w</code>,<code>x</code>分別是<code>4</code>,<code>2</code>,<code>1</code>，所以<code>7 = 4+2+1</code>就是可讀、可寫、可執行，以此類推，6 是可讀、可寫、不可執行，5 就是可讀、不可寫、可執行。</p>
+<p>回到上面的例子，如果要把檔案權限改成<code>-rw-r--r--</code>那麼對應的指令就是</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod <span class="m">644</span> <span class="o">[</span>file<span class="o">]</span>
+</span></span></code></pre></div><p>另外，<code>chmod</code>還有另一種用參數指定的寫法：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod <span class="o">[</span>who<span class="o">]</span> <span class="o">[</span>+/-/<span class="o">=]</span> <span class="o">[</span>rwx<span class="o">]</span>
+</span></span></code></pre></div><ul>
+<li><code>[who]</code>可以填入<code>u</code>(user 擁有者)、<code>g</code>(group 擁有者同群組)、<code>o</code>(others 其餘帳號)、<code>a</code>(all 所有帳號)</li>
+<li><code>+</code>是增加權限；<code>-</code>是取消權限；<code>=</code>是直接設定</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod ug-x <span class="o">[</span>file<span class="o">]</span>
+</span></span></code></pre></div><p>就是取消擁有者及同群組帳號執行的權限</p>
+<p>那如果要一次更動目錄及以下的所有檔案，只要加上<code>-R</code>(recursive) 就可以了<br>
+(通常是<code>-r</code>，但因為被用掉了所以變大寫)</p>
+<h2 id="chown-更改擁有者">chown 更改擁有者<a hidden class="anchor" aria-hidden="true" href="#chown-更改擁有者">#</a></h2>
+<p>用法是</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chown <span class="o">[</span>user<span class="o">]</span> <span class="o">[</span>file<span class="o">]</span>
+</span></span></code></pre></div><p>就會把 file 的擁有者改成 user 了</p>
+<p>要注意的是這同時會改變到權限。</p>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://hypersoweak.github.io/tags/vs-code/">VS Code</a></li>
+      <li><a href="https://hypersoweak.github.io/tags/linux/">Linux</a></li>
+      <li><a href="https://hypersoweak.github.io/tags/bash/">Bash</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://hypersoweak.github.io/posts/tutorials/linux-file-permission/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>Linux 修改檔案權限</span>
-  </a>
-  <a class="next" href="https://hypersoweak.github.io/posts/life/new-to-ntu/">
+  <a class="next" href="https://hypersoweak.github.io/posts/tutorials/vscode-shortcuts/">
     <span class="title">Next »</span>
     <br>
-    <span>在台大資工的半年 :)</span>
+    <span>常用 VS Code 快捷鍵</span>
   </a>
 </nav>
 

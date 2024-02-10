@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bash on HyperLand</title>
+    <link>https://hypersoweak.github.io/tags/bash/</link>
+    <description>Recent content in Bash on HyperLand</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Thu, 08 Feb 2024 15:34:05 +0800</lastBuildDate>
+    <atom:link href="https://hypersoweak.github.io/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 修改檔案權限</title>
+      <link>https://hypersoweak.github.io/posts/tutorials/linux-file-permission/</link>
+      <pubDate>Thu, 08 Feb 2024 15:34:05 +0800</pubDate>
+      <guid>https://hypersoweak.github.io/posts/tutorials/linux-file-permission/</guid>
+      <description>有時候我們想要執行或存取某個檔案，卻出現 Permission denied，就會直接 chmod +x [file]或chmod 777 [file]，於是，我們來談談檔案權限吧！ 權限</description>
+    </item>
+  </channel>
+</rss>
