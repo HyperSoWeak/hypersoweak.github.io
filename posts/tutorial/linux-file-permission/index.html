@@ -9,7 +9,7 @@
 <meta name="keywords" content="Linux, Bash">
 <meta name="description" content="有時候我們想要執行或存取某個檔案，卻出現 Permission denied，就會直接 chmod &#43;x [file]或chmod 777 [file]，於是，我們來談談檔案權限吧！ 權限">
 <meta name="author" content="Hyper">
-<link rel="canonical" href="https://hypersoweak.github.io/posts/tutorials/linux-file-permission/">
+<link rel="canonical" href="https://hypersoweak.github.io/posts/tutorial/linux-file-permission/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://hypersoweak.github.io/img/hypersoweak-circle.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://hypersoweak.github.io/favicon-16x16.png">
@@ -26,10 +26,31 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="Linux 修改檔案權限" />
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+<meta property="og:title" content="Linux 修改檔案權限" />
 <meta property="og:description" content="有時候我們想要執行或存取某個檔案，卻出現 Permission denied，就會直接 chmod &#43;x [file]或chmod 777 [file]，於是，我們來談談檔案權限吧！ 權限" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://hypersoweak.github.io/posts/tutorials/linux-file-permission/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://hypersoweak.github.io/posts/tutorial/linux-file-permission/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-02-08T15:34:05+08:00" />
 <meta property="article:modified_time" content="2024-02-08T15:34:05+08:00" />
 
@@ -53,7 +74,7 @@
       "@type": "ListItem",
       "position":  2 ,
       "name": "Linux 修改檔案權限",
-      "item": "https://hypersoweak.github.io/posts/tutorials/linux-file-permission/"
+      "item": "https://hypersoweak.github.io/posts/tutorial/linux-file-permission/"
     }
   ]
 }
@@ -79,7 +100,7 @@
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://hypersoweak.github.io/posts/tutorials/linux-file-permission/"
+    "@id": "https://hypersoweak.github.io/posts/tutorial/linux-file-permission/"
   },
   "publisher": {
     "@type": "Organization",
@@ -307,7 +328,12 @@
       <li><a href="https://hypersoweak.github.io/tags/bash/">Bash</a></li>
     </ul>
 <nav class="paginav">
-  <a class="next" href="https://hypersoweak.github.io/posts/tutorials/vscode-shortcuts/">
+  <a class="prev" href="https://hypersoweak.github.io/posts/tutorial/cpp-with-vscode/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>使用 VS Code 撰寫與編譯 C/C&#43;&#43; 程式</span>
+  </a>
+  <a class="next" href="https://hypersoweak.github.io/posts/tutorial/vscode-shortcuts/">
     <span class="title">Next »</span>
     <br>
     <span>常用 VS Code 快捷鍵</span>

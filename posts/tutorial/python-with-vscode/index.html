@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>使用 VS Code 撰寫 Python 程式 | HyperLand</title>
+<meta name="keywords" content="Python, VS Code">
+<meta name="description" content="本文適用於 Windows 環境。 下載並安裝 Python 到 Python 官網下載安裝檔，安裝最新版本。 安裝時勾選 Add python.exe to PATH，讓 Python 自動加入 Windows 環境變數。 完成後打開 terminal">
+<meta name="author" content="Hyper">
+<link rel="canonical" href="https://hypersoweak.github.io/posts/tutorial/python-with-vscode/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://hypersoweak.github.io/img/hypersoweak-circle.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://hypersoweak.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hypersoweak.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://hypersoweak.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://hypersoweak.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+<meta property="og:title" content="使用 VS Code 撰寫 Python 程式" />
+<meta property="og:description" content="本文適用於 Windows 環境。 下載並安裝 Python 到 Python 官網下載安裝檔，安裝最新版本。 安裝時勾選 Add python.exe to PATH，讓 Python 自動加入 Windows 環境變數。 完成後打開 terminal" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hypersoweak.github.io/posts/tutorial/python-with-vscode/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-02-05T14:04:12+08:00" />
+<meta property="article:modified_time" content="2024-02-05T14:04:12+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用 VS Code 撰寫 Python 程式"/>
+<meta name="twitter:description" content="本文適用於 Windows 環境。 下載並安裝 Python 到 Python 官網下載安裝檔，安裝最新版本。 安裝時勾選 Add python.exe to PATH，讓 Python 自動加入 Windows 環境變數。 完成後打開 terminal"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://hypersoweak.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "使用 VS Code 撰寫 Python 程式",
+      "item": "https://hypersoweak.github.io/posts/tutorial/python-with-vscode/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "使用 VS Code 撰寫 Python 程式",
+  "name": "使用 VS Code 撰寫 Python 程式",
+  "description": "本文適用於 Windows 環境。 下載並安裝 Python 到 Python 官網下載安裝檔，安裝最新版本。 安裝時勾選 Add python.exe to PATH，讓 Python 自動加入 Windows 環境變數。 完成後打開 terminal",
+  "keywords": [
+    "Python", "VS Code"
+  ],
+  "articleBody": "本文適用於 Windows 環境。\n下載並安裝 Python 到 Python 官網下載安裝檔，安裝最新版本。\n安裝時勾選 Add python.exe to PATH，讓 Python 自動加入 Windows 環境變數。 完成後打開 terminal，輸入python，跳出版本資訊就是安裝成功了~ 安裝 Visual Studio Code 與 Python 擴充套件 到 Visual Studio Code 官網下載安裝檔。\n安裝完成後創建一個資料夾並拖到 VS Code 圖示上開啟。(或者打開 VS Code，選擇File \u003e Open Folder)\n在左邊的 Extensions 分頁搜尋 python，安裝這個擴充套件。 按左上角的 New File 圖示新增一個 .py 檔案 在 Terminal 輸入 python .py 就執行成功了！\n如果 Terminal 沒有出現可以用Ctrl+`或View \u003e Terminal開啟 一鍵執行程式 每次執行程式都要打一串指令很麻煩，我們可以安裝 Code Runner 擴充套件來一鍵執行程式！\n一樣在 Extensions 搜尋 code runner，安裝這個擴充套件。 安裝完成後按齒輪開啟 Extension Settings。 推薦把這三個設定打開，預設在 Terminal 執行(輸入 input 較方便)，且在執行程式前自動存檔。 回到 Python 檔案，按下右上角的三角形或快捷鍵Ctrl+Alt+N就成功在 Terminal 執行了！ Code Runner 會自動偵測語言而產生不同的指令，所以其他語言也可以一鍵執行！\n多檔案的執行 如果專案有很多檔案，但不想每次跑程式都還要開啟main.py，可以用 Code Runner 的 Custom Command 功能。\n由於上面的做法是設定 Global Extension Settings，也就是所有專案的設定都會改變，因此我們這邊採用另一種方法，只改變目前專案的設定。\n在專案資料夾新增.vscode/settings.json檔案 在裡面打上\n{ \"code-runner.customCommand\": \"python -u main.py\" } 之後在任何地方按下快捷鍵Ctrl+Alt+K都可以執行main.py了！ 此外，VS Code 還有許多好用的快捷鍵，可以參考 常用 VS Code 快捷鍵\nPython 虛擬環境 什麼是虛擬環境？ 虛擬環境是一個獨立的開發環境，用來隔離不同專案的依賴關係，每個虛擬環境都有自己的 Python 版本和 Packages，不同的應用程式可以使用不同的虛擬環境，在同一台電腦上運作就不會互相影響。\n建立虛擬環境 首先按快捷鍵Ctrl+Shift+P搜尋Python: Create Environment...並執行 然後選擇venv \u003e 你的Python版本，完成後會看到專案裡多了一個.venv的資料夾，而底下則會出現如圖的文字。 這時候打開 terminal 輸入\npip list 就可以發現套件已經被清空了，這時候再使用\npip install 就會安裝在虛擬環境裡了，不會影響到其他專案。\n延伸閱讀 Python in Visual Studio Code\nPython Docs - 虛擬環境與套件\n",
+  "wordCount" : "937",
+  "inLanguage": "en",
+  "datePublished": "2024-02-05T14:04:12+08:00",
+  "dateModified": "2024-02-05T14:04:12+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Hyper"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hypersoweak.github.io/posts/tutorial/python-with-vscode/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HyperLand",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hypersoweak.github.io/img/hypersoweak-circle.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://hypersoweak.github.io/" accesskey="h" title="HyperLand (Alt + H)">HyperLand</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://hypersoweak.github.io/archives" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://hypersoweak.github.io/categories" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://hypersoweak.github.io/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://hypersoweak.github.io/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://hypersoweak.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://hypersoweak.github.io/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      使用 VS Code 撰寫 Python 程式
+    </h1>
+    <div class="post-meta"><span title='2024-02-05 14:04:12 +0800 CST'>2024-02-05</span>&nbsp;·&nbsp;2分鐘&nbsp;·&nbsp;937字&nbsp;·&nbsp;Hyper
+
+</div>
+    <ul class="post-tags">
+      <li><a href="https://hypersoweak.github.io/tags/python/">Python</a></li>
+      <li><a href="https://hypersoweak.github.io/tags/vs-code/">VS Code</a></li>
+    </ul>
+  </header> <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">文章目錄</span>
+            </summary>
+
+            <div class="inner"><ul>
+                    <li>
+                        <a href="#%e4%b8%8b%e8%bc%89%e4%b8%a6%e5%ae%89%e8%a3%9d-python" aria-label="下載並安裝 Python">下載並安裝 Python</a></li>
+                    <li>
+                        <a href="#%e5%ae%89%e8%a3%9d-visual-studio-code-%e8%88%87-python-%e6%93%b4%e5%85%85%e5%a5%97%e4%bb%b6" aria-label="安裝 Visual Studio Code 與 Python 擴充套件">安裝 Visual Studio Code 與 Python 擴充套件</a></li>
+                    <li>
+                        <a href="#%e4%b8%80%e9%8d%b5%e5%9f%b7%e8%a1%8c%e7%a8%8b%e5%bc%8f" aria-label="一鍵執行程式">一鍵執行程式</a></li>
+                    <li>
+                        <a href="#%e5%a4%9a%e6%aa%94%e6%a1%88%e7%9a%84%e5%9f%b7%e8%a1%8c" aria-label="多檔案的執行">多檔案的執行</a></li>
+                    <li>
+                        <a href="#python-%e8%99%9b%e6%93%ac%e7%92%b0%e5%a2%83" aria-label="Python 虛擬環境">Python 虛擬環境</a><ul>
+                            
+                    <li>
+                        <a href="#%e4%bb%80%e9%ba%bc%e6%98%af%e8%99%9b%e6%93%ac%e7%92%b0%e5%a2%83" aria-label="什麼是虛擬環境？">什麼是虛擬環境？</a></li>
+                    <li>
+                        <a href="#%e5%bb%ba%e7%ab%8b%e8%99%9b%e6%93%ac%e7%92%b0%e5%a2%83" aria-label="建立虛擬環境">建立虛擬環境</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#%e5%bb%b6%e4%bc%b8%e9%96%b1%e8%ae%80" aria-label="延伸閱讀">延伸閱讀</a>
+                    </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;   
+    }
+</script>
+
+  <div class="post-content"><p>本文適用於 Windows 環境。</p>
+<h2 id="下載並安裝-python">下載並安裝 Python<a hidden class="anchor" aria-hidden="true" href="#下載並安裝-python">#</a></h2>
+<p>到 Python 官網<a href="https://www.python.org/downloads/">下載</a>安裝檔，安裝最新版本。</p>
+<p>安裝時勾選 Add python.exe to PATH，讓 Python 自動加入 Windows 環境變數。
+<img loading="lazy" src="images/python-installation.png" alt=""  />
+</p>
+<p>完成後打開 terminal，輸入<code>python</code>，跳出版本資訊就是安裝成功了~
+<img loading="lazy" src="images/terminal.png" alt=""  />
+</p>
+<hr>
+<h2 id="安裝-visual-studio-code-與-python-擴充套件">安裝 Visual Studio Code 與 Python 擴充套件<a hidden class="anchor" aria-hidden="true" href="#安裝-visual-studio-code-與-python-擴充套件">#</a></h2>
+<p>到 Visual Studio Code 官網<a href="https://code.visualstudio.com/">下載</a>安裝檔。</p>
+<p>安裝完成後創建一個資料夾並拖到 VS Code 圖示上開啟。(或者打開 VS Code，選擇<code>File &gt; Open Folder</code>)</p>
+<p>在左邊的 Extensions 分頁搜尋 python，安裝這個擴充套件。
+<img loading="lazy" src="images/image.png" alt=""  />
+</p>
+<p>按左上角的 New File 圖示新增一個 .py 檔案
+<img loading="lazy" src="images/image-1.png" alt=""  />
+</p>
+<p>在 Terminal 輸入 <code>python &lt;filename&gt;.py</code> 就執行成功了！<br>
+如果 Terminal 沒有出現可以用<code>Ctrl+`</code>或<code>View &gt; Terminal</code>開啟
+<img loading="lazy" src="images/image-2.png" alt=""  />
+</p>
+<hr>
+<h2 id="一鍵執行程式">一鍵執行程式<a hidden class="anchor" aria-hidden="true" href="#一鍵執行程式">#</a></h2>
+<p>每次執行程式都要打一串指令很麻煩，我們可以安裝 Code Runner 擴充套件來一鍵執行程式！</p>
+<p>一樣在 Extensions 搜尋 code runner，安裝這個擴充套件。
+<img loading="lazy" src="images/image-3.png" alt=""  />
+</p>
+<p>安裝完成後按齒輪開啟 Extension Settings。
+<img loading="lazy" src="images/image-4.png" alt=""  />
+</p>
+<p>推薦把這三個設定打開，預設在 Terminal 執行(輸入 input 較方便)，且在執行程式前自動存檔。
+<img loading="lazy" src="images/image-5.png" alt=""  />
+</p>
+<p>回到 Python 檔案，按下右上角的三角形或快捷鍵<code>Ctrl+Alt+N</code>就成功在 Terminal 執行了！
+<img loading="lazy" src="images/image-6.png" alt=""  />
+</p>
+<p>Code Runner 會自動偵測語言而產生不同的指令，所以其他語言也可以一鍵執行！</p>
+<hr>
+<h2 id="多檔案的執行">多檔案的執行<a hidden class="anchor" aria-hidden="true" href="#多檔案的執行">#</a></h2>
+<p>如果專案有很多檔案，但不想每次跑程式都還要開啟<code>main.py</code>，可以用 Code Runner 的 Custom Command 功能。</p>
+<p>由於上面的做法是設定 Global Extension Settings，也就是所有專案的設定都會改變，因此我們這邊採用另一種方法，只改變目前專案的設定。</p>
+<p>在專案資料夾新增<code>.vscode/settings.json</code>檔案
+<img loading="lazy" src="images/image-7.png" alt=""  />
+</p>
+<p>在裡面打上</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;code-runner.customCommand&#34;</span><span class="p">:</span> <span class="s2">&#34;python -u main.py&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>之後在任何地方按下快捷鍵<code>Ctrl+Alt+K</code>都可以執行<code>main.py</code>了！
+<img loading="lazy" src="images/image-8.png" alt=""  />
+</p>
+<p>此外，VS Code 還有許多好用的快捷鍵，可以參考 <a href="/posts/tutorial/vscode-shortcuts/">常用 VS Code 快捷鍵</a></p>
+<hr>
+<h2 id="python-虛擬環境">Python 虛擬環境<a hidden class="anchor" aria-hidden="true" href="#python-虛擬環境">#</a></h2>
+<h3 id="什麼是虛擬環境">什麼是虛擬環境？<a hidden class="anchor" aria-hidden="true" href="#什麼是虛擬環境">#</a></h3>
+<p>虛擬環境是一個獨立的開發環境，用來隔離不同專案的依賴關係，每個虛擬環境都有自己的 Python 版本和 Packages，不同的應用程式可以使用不同的虛擬環境，在同一台電腦上運作就不會互相影響。</p>
+<h3 id="建立虛擬環境">建立虛擬環境<a hidden class="anchor" aria-hidden="true" href="#建立虛擬環境">#</a></h3>
+<p>首先按快捷鍵<code>Ctrl+Shift+P</code>搜尋<code>Python: Create Environment...</code>並執行
+<img loading="lazy" src="images/image-10.png" alt=""  />
+</p>
+<p>然後選擇<code>venv &gt; 你的Python版本</code>，完成後會看到專案裡多了一個<code>.venv</code>的資料夾，而底下則會出現如圖的文字。
+<img loading="lazy" src="images/Picture1.png" alt=""  />
+</p>
+<p>這時候打開 terminal 輸入</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">pip list
+</span></span></code></pre></div><p>就可以發現套件已經被清空了，這時候再使用</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">pip install
+</span></span></code></pre></div><p>就會安裝在虛擬環境裡了，不會影響到其他專案。</p>
+<h2 id="延伸閱讀">延伸閱讀<a hidden class="anchor" aria-hidden="true" href="#延伸閱讀">#</a></h2>
+<p><a href="https://code.visualstudio.com/docs/languages/python">Python in Visual Studio Code</a><br>
+<a href="https://docs.python.org/zh-tw/3/tutorial/venv.html">Python Docs - 虛擬環境與套件</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://hypersoweak.github.io/tags/python/">Python</a></li>
+      <li><a href="https://hypersoweak.github.io/tags/vs-code/">VS Code</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://hypersoweak.github.io/posts/life/new-to-ntu/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>在台大資工的半年 :)</span>
+  </a>
+  <a class="next" href="https://hypersoweak.github.io/posts/life/first/">
+    <span class="title">Next »</span>
+    <br>
+    <span>嗨</span>
+  </a>
+</nav>
+
+  </footer><div id="disqus_thread"></div>
+<script>
+    
+
+    
+
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://hyperland.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://hypersoweak.github.io/">HyperLand</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

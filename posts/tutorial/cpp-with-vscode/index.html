@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>使用 VS Code 撰寫與編譯 C/C&#43;&#43; 程式 | HyperLand</title>
+<meta name="keywords" content="VS Code, C, C&#43;&#43;">
+<meta name="description" content="有鑑於 C/C&#43;&#43; 的環境建置真的有夠麻煩，我自己也踩了好幾次坑，因此寫了這篇文章，希望大家都不要被 C 系列荼毒 &gt;&lt; 本文適用於 Windows 環境。 安裝編譯器 (MinGW) 下載 MinGW setup (">
+<meta name="author" content="Hyper">
+<link rel="canonical" href="https://hypersoweak.github.io/posts/tutorial/cpp-with-vscode/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://hypersoweak.github.io/img/hypersoweak-circle.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://hypersoweak.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hypersoweak.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://hypersoweak.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://hypersoweak.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+<meta property="og:title" content="使用 VS Code 撰寫與編譯 C/C&#43;&#43; 程式" />
+<meta property="og:description" content="有鑑於 C/C&#43;&#43; 的環境建置真的有夠麻煩，我自己也踩了好幾次坑，因此寫了這篇文章，希望大家都不要被 C 系列荼毒 &gt;&lt; 本文適用於 Windows 環境。 安裝編譯器 (MinGW) 下載 MinGW setup (" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hypersoweak.github.io/posts/tutorial/cpp-with-vscode/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-02-14T01:49:28+08:00" />
+<meta property="article:modified_time" content="2024-02-14T01:49:28+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用 VS Code 撰寫與編譯 C/C&#43;&#43; 程式"/>
+<meta name="twitter:description" content="有鑑於 C/C&#43;&#43; 的環境建置真的有夠麻煩，我自己也踩了好幾次坑，因此寫了這篇文章，希望大家都不要被 C 系列荼毒 &gt;&lt; 本文適用於 Windows 環境。 安裝編譯器 (MinGW) 下載 MinGW setup ("/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://hypersoweak.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "使用 VS Code 撰寫與編譯 C/C++ 程式",
+      "item": "https://hypersoweak.github.io/posts/tutorial/cpp-with-vscode/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "使用 VS Code 撰寫與編譯 C/C++ 程式",
+  "name": "使用 VS Code 撰寫與編譯 C\/C\u002b\u002b 程式",
+  "description": "有鑑於 C/C++ 的環境建置真的有夠麻煩，我自己也踩了好幾次坑，因此寫了這篇文章，希望大家都不要被 C 系列荼毒 \u0026gt;\u0026lt; 本文適用於 Windows 環境。 安裝編譯器 (MinGW) 下載 MinGW setup (",
+  "keywords": [
+    "VS Code", "C", "C++"
+  ],
+  "articleBody": " 有鑑於 C/C++ 的環境建置真的有夠麻煩，我自己也踩了好幾次坑，因此寫了這篇文章，希望大家都不要被 C 系列荼毒 \u003e\u003c\n本文適用於 Windows 環境。\n安裝編譯器 (MinGW) 下載 MinGW setup (個人認為 MinGW 載點真的有夠難找，而且各式版本一大堆很混亂)\n按 Download Latest Version (綠色按鈕)\n下載安裝完成後會自動開啟 MinGW Installation Manager 勾選 mingw32-base 及 mingw32-gcc-g++，按 Mark for Installation 接下來按左上角 Installation \u003e Apply Changes 按 Apply，就會開始安裝編譯器跟標頭檔等等的文件 之後等它安裝完成後就可以把 Installation Manager 關了\n加入 PATH 環境變數 PATH 環境變數基本上就是「系統要到哪些路徑底下找執行檔」，不然每次要使用 gcc 都要指定絕對路徑。\n非必要，VS Code 本身可以設定編譯器路徑，但還是建議設定一下環境變數比較方便，可以在 terminal 中任何一個目錄下使用 gcc/g++ 指令編譯。\n上個步驟的 MinGW 安裝完成後，我們去剛剛安裝的路徑，找到名為bin的資料夾並複製路徑，以我的系統為例就是 C:\\MinGW\\bin。\n在搜尋欄搜索 environment variables，或者如果系統語言是中文就找 環境變數，把他打開。 按 Environment Variables... 接下來到 User variables 那邊選擇 Path，再按 Edit... 要選 System variables 的 Path 也是可以，差別在於前者只作用於目前使用者，而後者則是整個系統的所有使用者共用，也就是日後使用其他帳號就不用重新設定一次。\n按 New 然後把剛剛 bin 資料夾的路徑貼上去 接下來一直按 OK 儲存更改並把視窗關掉。\n打開 terminal (搜尋 cmd 或 powershell) 輸入\ngcc --version g++ --version 如果有出現版本訊息就代表設定好環境變數了！ 使用 VS Code (設定完 PATH 環境變數需重啟 VS Code 才會生效)\n創建一個資料夾並拖到 VS Code 圖示上來開啟專案。(或者打開 VS Code，選擇File \u003e Open Folder)\n或許會跳提示框，按 Yes, I trust the authors 就好。\n安裝 Code Runner 擴充包，可參考使用 VS Code 撰寫 Python 程式的相關設定。\n💡Tips: 如果使用C/C++的目的是競程的話，要把 Run In Terminal 打開，才有辦法在 terminal 輸入測資。\n按右上角三角形或快捷鍵Ctrl+Alt+N就可以在 terminal 看到執行結果了！ (參考 常用 VS Code 快捷鍵) C/C++ Extension Pack C/C++ Extension Pack 是 Microsoft 的擴充包。\nDebug 功能對於比較大型的專案十分有用，不過如果是要打競程的話可能用不太到，可以暫時忽略這部分(?\n安裝完之後會發現右上角三角形除了 Run Code 之外，還多了 Debug 跟 Run C/C++ File 的選項。\n執行之後會產生.vscode資料夾，裡面可能會有c_cpp_properties.json tasks.json launch.json檔案。\nc_cpp_properties.json裡可以定義像是編譯器路徑、intellisense(程式代碼完成輔助功能)、C++版本、include path之類的設定；而tasks.json可以設定執行的命令(可以取代 makefile 但不推薦)；launch.json則是用來 Debug 的。\n這邊就不細講，剩下的功能交給讀者自行摸索了～\n延伸閱讀 c_cpp_properties.json reference\n",
+  "wordCount" : "1074",
+  "inLanguage": "en",
+  "datePublished": "2024-02-14T01:49:28+08:00",
+  "dateModified": "2024-02-14T01:49:28+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Hyper"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hypersoweak.github.io/posts/tutorial/cpp-with-vscode/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HyperLand",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hypersoweak.github.io/img/hypersoweak-circle.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://hypersoweak.github.io/" accesskey="h" title="HyperLand (Alt + H)">HyperLand</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://hypersoweak.github.io/archives" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://hypersoweak.github.io/categories" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://hypersoweak.github.io/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://hypersoweak.github.io/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://hypersoweak.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://hypersoweak.github.io/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      使用 VS Code 撰寫與編譯 C/C&#43;&#43; 程式
+    </h1>
+    <div class="post-meta"><span title='2024-02-14 01:49:28 +0800 CST'>2024-02-14</span>&nbsp;·&nbsp;3分鐘&nbsp;·&nbsp;1074字&nbsp;·&nbsp;Hyper
+
+</div>
+    <ul class="post-tags">
+      <li><a href="https://hypersoweak.github.io/tags/vs-code/">VS Code</a></li>
+      <li><a href="https://hypersoweak.github.io/tags/c/">C</a></li>
+      <li><a href="https://hypersoweak.github.io/tags/c&#43;&#43;/">C&#43;&#43;</a></li>
+    </ul>
+  </header> <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">文章目錄</span>
+            </summary>
+
+            <div class="inner"><ul>
+                    <li>
+                        <a href="#%e5%ae%89%e8%a3%9d%e7%b7%a8%e8%ad%af%e5%99%a8-mingw" aria-label="安裝編譯器 (MinGW)">安裝編譯器 (MinGW)</a></li>
+                    <li>
+                        <a href="#%e5%8a%a0%e5%85%a5-path-%e7%92%b0%e5%a2%83%e8%ae%8a%e6%95%b8" aria-label="加入 PATH 環境變數">加入 PATH 環境變數</a></li>
+                    <li>
+                        <a href="#%e4%bd%bf%e7%94%a8-vs-code" aria-label="使用 VS Code">使用 VS Code</a></li>
+                    <li>
+                        <a href="#cc-extension-pack" aria-label="C/C&#43;&#43; Extension Pack">C/C++ Extension Pack</a></li>
+                    <li>
+                        <a href="#%e5%bb%b6%e4%bc%b8%e9%96%b1%e8%ae%80" aria-label="延伸閱讀">延伸閱讀</a>
+                    </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;   
+    }
+</script>
+
+  <div class="post-content"><blockquote>
+<p>有鑑於 C/C++ 的環境建置真的有夠麻煩，我自己也踩了好幾次坑，因此寫了這篇文章，希望大家都不要被 C 系列荼毒 &gt;&lt;</p>
+</blockquote>
+<p>本文適用於 Windows 環境。</p>
+<h2 id="安裝編譯器-mingw">安裝編譯器 (MinGW)<a hidden class="anchor" aria-hidden="true" href="#安裝編譯器-mingw">#</a></h2>
+<p><a href="https://sourceforge.net/projects/mingw/files/Installer/">下載 MinGW setup</a> (個人認為 MinGW 載點真的有夠難找，而且各式版本一大堆很混亂)</p>
+<p>按 Download Latest Version (綠色按鈕)</p>
+<p>下載安裝完成後會自動開啟 MinGW Installation Manager
+<img loading="lazy" src="images/image.png" alt="alt text"  />
+</p>
+<p>勾選 mingw32-base 及 mingw32-gcc-g++，按 Mark for Installation
+<img loading="lazy" src="images/image-1.png" alt="alt text"  />
+</p>
+<p>接下來按左上角 Installation &gt; Apply Changes
+<img loading="lazy" src="images/image-2.png" alt="alt text"  />
+</p>
+<p>按 Apply，就會開始安裝編譯器跟標頭檔等等的文件
+<img loading="lazy" src="images/image-3.png" alt="alt text"  />
+</p>
+<p>之後等它安裝完成後就可以把 Installation Manager 關了</p>
+<h2 id="加入-path-環境變數">加入 PATH 環境變數<a hidden class="anchor" aria-hidden="true" href="#加入-path-環境變數">#</a></h2>
+<p>PATH 環境變數基本上就是「系統要到哪些路徑底下找執行檔」，不然每次要使用 gcc 都要指定絕對路徑。</p>
+<p>非必要，VS Code 本身可以設定編譯器路徑，但還是建議設定一下環境變數比較方便，可以在 terminal 中任何一個目錄下使用 gcc/g++ 指令編譯。</p>
+<p>上個步驟的 MinGW 安裝完成後，我們去剛剛安裝的路徑，找到名為bin的資料夾並複製路徑，以我的系統為例就是 <code>C:\MinGW\bin</code>。</p>
+<p>在搜尋欄搜索 <code>environment variables</code>，或者如果系統語言是中文就找 <code>環境變數</code>，把他打開。
+<img loading="lazy" src="images/image-4.png" alt="alt text"  />
+</p>
+<p>按 <code>Environment Variables...</code>
+<img loading="lazy" src="images/image-5.png" alt="alt text"  />
+</p>
+<p>接下來到 User variables 那邊選擇 Path，再按 <code>Edit...</code>
+<img loading="lazy" src="images/image-6.png" alt="alt text"  />
+
+要選 System variables 的 Path 也是可以，差別在於前者只作用於目前使用者，而後者則是整個系統的所有使用者共用，也就是日後使用其他帳號就不用重新設定一次。</p>
+<p>按 New 然後把剛剛 bin 資料夾的路徑貼上去
+<img loading="lazy" src="images/image-7.png" alt="alt text"  />
+</p>
+<p>接下來一直按 OK 儲存更改並把視窗關掉。</p>
+<p>打開 terminal (搜尋 cmd 或 powershell) 輸入</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gcc --version
+</span></span><span class="line"><span class="cl">g++ --version
+</span></span></code></pre></div><p>如果有出現版本訊息就代表設定好環境變數了！
+<img loading="lazy" src="images/image-8.png" alt="alt text"  />
+</p>
+<h2 id="使用-vs-code">使用 VS Code<a hidden class="anchor" aria-hidden="true" href="#使用-vs-code">#</a></h2>
+<p>(設定完 PATH 環境變數需重啟 VS Code 才會生效)</p>
+<p>創建一個資料夾並拖到 VS Code 圖示上來開啟專案。(或者打開 VS Code，選擇<code>File &gt; Open Folder</code>)</p>
+<p>或許會跳提示框，按 Yes, I trust the authors 就好。</p>
+<p>安裝 Code Runner 擴充包，可參考<a href="/posts/tutorial/python-with-vscode#%E4%B8%80%E9%8D%B5%E5%9F%B7%E8%A1%8C%E7%A8%8B%E5%BC%8F">使用 VS Code 撰寫 Python 程式</a>的相關設定。</p>
+<blockquote>
+<p>💡<strong>Tips</strong>:
+如果使用C/C++的目的是<strong>競程</strong>的話，要把 Run In Terminal 打開，才有辦法在 terminal 輸入測資。</p>
+</blockquote>
+<p>按右上角三角形或快捷鍵<code>Ctrl+Alt+N</code>就可以在 terminal 看到執行結果了！
+(參考 <a href="/posts/tutorials/vscode-shortcuts/">常用 VS Code 快捷鍵</a>)
+<img loading="lazy" src="images/image-9.png" alt="alt text"  />
+</p>
+<h2 id="cc-extension-pack">C/C++ Extension Pack<a hidden class="anchor" aria-hidden="true" href="#cc-extension-pack">#</a></h2>
+<p>C/C++ Extension Pack 是 Microsoft 的擴充包。</p>
+<p>Debug 功能對於比較大型的專案十分有用，不過如果是要打競程的話可能用不太到，可以暫時忽略這部分(?</p>
+<p>安裝完之後會發現右上角三角形除了 Run Code 之外，還多了 Debug 跟 Run C/C++ File 的選項。</p>
+<p>執行之後會產生<code>.vscode</code>資料夾，裡面可能會有<code>c_cpp_properties.json</code> <code>tasks.json</code> <code>launch.json</code>檔案。</p>
+<p><code>c_cpp_properties.json</code>裡可以定義像是編譯器路徑、intellisense(程式代碼完成輔助功能)、C++版本、include path之類的設定；而<code>tasks.json</code>可以設定執行的命令(可以取代 makefile 但不推薦)；<code>launch.json</code>則是用來 Debug 的。</p>
+<p>這邊就不細講，剩下的功能交給讀者自行摸索了～</p>
+<h2 id="延伸閱讀">延伸閱讀<a hidden class="anchor" aria-hidden="true" href="#延伸閱讀">#</a></h2>
+<p><a href="https://code.visualstudio.com/docs/cpp/c-cpp-properties-schema-reference">c_cpp_properties.json reference</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://hypersoweak.github.io/tags/vs-code/">VS Code</a></li>
+      <li><a href="https://hypersoweak.github.io/tags/c/">C</a></li>
+      <li><a href="https://hypersoweak.github.io/tags/c&#43;&#43;/">C&#43;&#43;</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://hypersoweak.github.io/posts/tutorial/linux-file-permission/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Linux 修改檔案權限</span>
+  </a>
+</nav>
+
+  </footer><div id="disqus_thread"></div>
+<script>
+    
+
+    
+
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://hyperland.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://hypersoweak.github.io/">HyperLand</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

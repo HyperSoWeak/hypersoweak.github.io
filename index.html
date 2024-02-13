@@ -29,7 +29,28 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="HyperLand" />
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+<meta property="og:title" content="HyperLand" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://hypersoweak.github.io/" />
@@ -158,6 +179,18 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">使用 VS Code 撰寫與編譯 C/C&#43;&#43; 程式
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>有鑑於 C/C&#43;&#43; 的環境建置真的有夠麻煩，我自己也踩了好幾次坑，因此寫了這篇文章，希望大家都不要被 C 系列荼毒 &gt;&lt; 本文適用於 Windows 環境。 安裝編譯器 (MinGW) 下載 MinGW setup (...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-14 01:49:28 +0800 CST'>2024-02-14</span>&nbsp;·&nbsp;3分鐘&nbsp;·&nbsp;1074字&nbsp;·&nbsp;Hyper</footer>
+  <a class="entry-link" aria-label="post link to 使用 VS Code 撰寫與編譯 C/C&#43;&#43; 程式" href="https://hypersoweak.github.io/posts/tutorial/cpp-with-vscode/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Linux 修改檔案權限
     </h2>
   </header>
@@ -165,7 +198,7 @@
     <p>有時候我們想要執行或存取某個檔案，卻出現 Permission denied，就會直接 chmod &#43;x [file]或chmod 777 [file]，於是，我們來談談檔案權限吧！ 權限...</p>
   </div>
   <footer class="entry-footer"><span title='2024-02-08 15:34:05 +0800 CST'>2024-02-08</span>&nbsp;·&nbsp;2分鐘&nbsp;·&nbsp;809字&nbsp;·&nbsp;Hyper</footer>
-  <a class="entry-link" aria-label="post link to Linux 修改檔案權限" href="https://hypersoweak.github.io/posts/tutorials/linux-file-permission/"></a>
+  <a class="entry-link" aria-label="post link to Linux 修改檔案權限" href="https://hypersoweak.github.io/posts/tutorial/linux-file-permission/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -177,7 +210,7 @@
     <p>VS Code 有非常多快捷鍵，我整理了一些較常用的，可以加速工作效率。 編輯程式 快捷鍵 功能 Ctrl&#43;/ 註解 / 取消註解（可以一次註解多行，超級好用） Shift&#43;Alt&#43;Up/Down 複製行至上/下...</p>
   </div>
   <footer class="entry-footer"><span title='2024-02-07 02:01:41 +0800 CST'>2024-02-07</span>&nbsp;·&nbsp;1分鐘&nbsp;·&nbsp;349字&nbsp;·&nbsp;Hyper</footer>
-  <a class="entry-link" aria-label="post link to 常用 VS Code 快捷鍵" href="https://hypersoweak.github.io/posts/tutorials/vscode-shortcuts/"></a>
+  <a class="entry-link" aria-label="post link to 常用 VS Code 快捷鍵" href="https://hypersoweak.github.io/posts/tutorial/vscode-shortcuts/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -201,7 +234,7 @@
     <p>本文適用於 Windows 環境。 下載並安裝 Python 到 Python 官網下載安裝檔，安裝最新版本。 安裝時勾選 Add python.exe to PATH，讓 Python 自動加入 Windows 環境變數。 完成後打開 terminal...</p>
   </div>
   <footer class="entry-footer"><span title='2024-02-05 14:04:12 +0800 CST'>2024-02-05</span>&nbsp;·&nbsp;2分鐘&nbsp;·&nbsp;937字&nbsp;·&nbsp;Hyper</footer>
-  <a class="entry-link" aria-label="post link to 使用 VS Code 撰寫 Python 程式" href="https://hypersoweak.github.io/posts/tutorials/python-with-vscode/"></a>
+  <a class="entry-link" aria-label="post link to 使用 VS Code 撰寫 Python 程式" href="https://hypersoweak.github.io/posts/tutorial/python-with-vscode/"></a>
 </article>
 
 <article class="post-entry"> 

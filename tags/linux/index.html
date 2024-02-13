@@ -27,7 +27,28 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="Linux" />
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+<meta property="og:title" content="Linux" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://hypersoweak.github.io/tags/linux/" />
@@ -121,7 +142,7 @@
     <p>有時候我們想要執行或存取某個檔案，卻出現 Permission denied，就會直接 chmod &#43;x [file]或chmod 777 [file]，於是，我們來談談檔案權限吧！ 權限...</p>
   </div>
   <footer class="entry-footer"><span title='2024-02-08 15:34:05 +0800 CST'>2024-02-08</span>&nbsp;·&nbsp;2分鐘&nbsp;·&nbsp;809字&nbsp;·&nbsp;Hyper</footer>
-  <a class="entry-link" aria-label="post link to Linux 修改檔案權限" href="https://hypersoweak.github.io/posts/tutorials/linux-file-permission/"></a>
+  <a class="entry-link" aria-label="post link to Linux 修改檔案權限" href="https://hypersoweak.github.io/posts/tutorial/linux-file-permission/"></a>
 </article>
     </main>
     

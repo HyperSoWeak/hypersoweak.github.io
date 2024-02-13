@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>C on HyperLand</title>
+    <link>https://hypersoweak.github.io/tags/c/</link>
+    <description>Recent content in C on HyperLand</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 14 Feb 2024 01:49:28 +0800</lastBuildDate>
+    <atom:link href="https://hypersoweak.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 VS Code 撰寫與編譯 C/C&#43;&#43; 程式</title>
+      <link>https://hypersoweak.github.io/posts/tutorial/cpp-with-vscode/</link>
+      <pubDate>Wed, 14 Feb 2024 01:49:28 +0800</pubDate>
+      <guid>https://hypersoweak.github.io/posts/tutorial/cpp-with-vscode/</guid>
+      <description>有鑑於 C/C++ 的環境建置真的有夠麻煩，我自己也踩了好幾次坑，因此寫了這篇文章，希望大家都不要被 C 系列荼毒 &amp;gt;&amp;lt; 本文適用於 Windows 環境。 安裝編譯器 (MinGW) 下載 MinGW setup (</description>
+    </item>
+  </channel>
+</rss>
