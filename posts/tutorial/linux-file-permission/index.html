@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="zh-tw" dir="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -91,7 +91,7 @@
   ],
   "articleBody": " 有時候我們想要執行或存取某個檔案，卻出現 Permission denied，就會直接\nchmod +x [file]或chmod 777 [file]，於是，我們來談談檔案權限吧！\n權限代號與檔案分類 輸入ls -l指令會發現前面有類似-rw-rw-r--由r w x組成的字串，其實這代表檔案的類型與權限。 第一個字元代表檔案的類型：\nd 代表目錄 (資料夾) - 一般檔案，包含純文字、binary、data l 連結檔 (link file)，類似 Windows 的捷徑 b 區塊設備檔 (儲存用設備，如硬碟) c 字元設備檔 (序列埠周邊設備，如鍵盤、滑鼠) s 資料接口檔 p 資料輸送檔 最常見的就是d跟-啦。\n而接下來的字元以3個為一組，共三組，依次代表擁有者、擁有者的群組、其餘帳號的權限。\n權限有分為三種：\nr 讀取 (目錄則是可以看到裡面檔案的權限) w 寫入 x 執行 (目錄則是可以進入的權限) 舉個例子，-rw-r--r--代表是一般檔案，自己可讀寫，同群組跟其他人都只能讀。\n講完了權限的分類，接下來來講如何更改權限。\nchmod 更改存取權限 首先我們來看一個指令\nchmod 765 [file] 中間的 765 是什麼意思呢，他分別對應了上面所講的，擁有者、擁有者的群組、其餘帳號的權限。\n這就是設計者的巧思了，其中r,w,x分別是4,2,1，所以7 = 4+2+1就是可讀、可寫、可執行，以此類推，6 是可讀、可寫、不可執行，5 就是可讀、不可寫、可執行。\n回到上面的例子，如果要把檔案權限改成-rw-r--r--那麼對應的指令就是\nchmod 644 [file] 另外，chmod還有另一種用參數指定的寫法：\nchmod [who] [+/-/=] [rwx] [who]可以填入u(user 擁有者)、g(group 擁有者同群組)、o(others 其餘帳號)、a(all 所有帳號) +是增加權限；-是取消權限；=是直接設定 chmod ug-x [file] 就是取消擁有者及同群組帳號執行的權限\n那如果要一次更動目錄及以下的所有檔案，只要加上-R(recursive) 就可以了\n(通常是-r，但因為被用掉了所以變大寫)\nchown 更改擁有者 用法是\nchown [user] [file] 就會把 file 的擁有者改成 user 了\n要注意的是這同時會改變到權限。\n",
   "wordCount" : "809",
-  "inLanguage": "en",
+  "inLanguage": "zh-tw",
   "datePublished": "2024-02-08T15:34:05+08:00",
   "dateModified": "2024-02-08T15:34:05+08:00",
   "author":{
@@ -151,23 +151,23 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://hypersoweak.github.io/archives" title="Archives">
-                    <span>Archives</span>
+                <a href="https://hypersoweak.github.io/archives" title="時間軸">
+                    <span>時間軸</span>
                 </a>
             </li>
             <li>
-                <a href="https://hypersoweak.github.io/categories" title="Categories">
-                    <span>Categories</span>
+                <a href="https://hypersoweak.github.io/categories" title="分類">
+                    <span>分類</span>
                 </a>
             </li>
             <li>
-                <a href="https://hypersoweak.github.io/tags" title="Tags">
-                    <span>Tags</span>
+                <a href="https://hypersoweak.github.io/tags" title="標籤">
+                    <span>標籤</span>
                 </a>
             </li>
             <li>
-                <a href="https://hypersoweak.github.io/search" title="Search (Alt &#43; /)" accesskey=/>
-                    <span>Search</span>
+                <a href="https://hypersoweak.github.io/search" title="搜尋 (Alt &#43; /)" accesskey=/>
+                    <span>搜尋</span>
                 </a>
             </li>
         </ul>
@@ -177,7 +177,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://hypersoweak.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://hypersoweak.github.io/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://hypersoweak.github.io/">首頁</a>&nbsp;»&nbsp;<a href="https://hypersoweak.github.io/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Linux 修改檔案權限
     </h1>
@@ -329,12 +329,12 @@
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://hypersoweak.github.io/posts/tutorial/cpp-with-vscode/">
-    <span class="title">« Prev</span>
+    <span class="title">« 上一頁</span>
     <br>
     <span>使用 VS Code 撰寫與編譯 C/C&#43;&#43; 程式</span>
   </a>
   <a class="next" href="https://hypersoweak.github.io/posts/tutorial/vscode-shortcuts/">
-    <span class="title">Next »</span>
+    <span class="title">下一頁 »</span>
     <br>
     <span>常用 VS Code 快捷鍵</span>
   </a>
@@ -431,12 +431,12 @@
 
         const copybutton = document.createElement('button');
         copybutton.classList.add('copy-code');
-        copybutton.innerHTML = 'copy';
+        copybutton.innerHTML = '複製';
 
         function copyingDone() {
-            copybutton.innerHTML = 'copied!';
+            copybutton.innerHTML = '已複製！';
             setTimeout(() => {
-                copybutton.innerHTML = 'copy';
+                copybutton.innerHTML = '複製';
             }, 2000);
         }
 
