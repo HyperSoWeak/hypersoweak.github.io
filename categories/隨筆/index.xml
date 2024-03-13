@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>隨筆 on HyperLand</title>
+    <link>https://hypersoweak.github.io/categories/%E9%9A%A8%E7%AD%86/</link>
+    <description>Recent content in 隨筆 on HyperLand</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>© 2024 HyperSoWeak</copyright>
+    <lastBuildDate>Tue, 06 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hypersoweak.github.io/categories/%E9%9A%A8%E7%AD%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在台大資工的半年 :)</title>
+      <link>https://hypersoweak.github.io/posts/essay/new-to-ntu/</link>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hypersoweak.github.io/posts/essay/new-to-ntu/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hypersoweak.github.io/posts/essay/new-to-ntu/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>嗨各位</title>
+      <link>https://hypersoweak.github.io/posts/essay/first/</link>
+      <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hypersoweak.github.io/posts/essay/first/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hypersoweak.github.io/posts/essay/first/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>

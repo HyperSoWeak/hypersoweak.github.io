@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C / C&#43;&#43; on HyperLand</title>
+    <link>https://hypersoweak.github.io/tags/c-/-c&#43;&#43;/</link>
+    <description>Recent content in C / C&#43;&#43; on HyperLand</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>© 2024 HyperSoWeak</copyright>
+    <atom:link href="https://hypersoweak.github.io/tags/c-/-c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 VS Code 撰寫與編譯 C/C&#43;&#43; 程式</title>
+      <link>https://hypersoweak.github.io/posts/tutorials/cpp-with-vscode/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hypersoweak.github.io/posts/tutorials/cpp-with-vscode/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hypersoweak.github.io/posts/tutorials/cpp-with-vscode/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
