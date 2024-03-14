@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>使用 VS Code 撰寫與編譯 C/C&#43;&#43; 程式 &middot; HyperLand</title>
-  <meta name="title" content="使用 VS Code 撰寫與編譯 C/C&#43;&#43; 程式 &middot; HyperLand" />
+  <title>Programming Tips and Useless Knowledge &middot; HyperLand</title>
+  <meta name="title" content="Programming Tips and Useless Knowledge &middot; HyperLand" />
   
-  <meta name="description" content="HyperLand, the place we dream." />
-  <meta name="keywords" content="VS Code, C / C&#43;&#43;, " />
+  <meta name="description" content="20240306 讀書會簡報" />
   
   
-  <link rel="canonical" href="https://hypersoweak.github.io/posts/tutorials/cpp-with-vscode/" />
+  
+  <link rel="canonical" href="https://hypersoweak.github.io/external/programming-tips/" />
   
   
   
@@ -63,44 +63,43 @@
   
   
   
-  <meta property="og:title" content="使用 VS Code 撰寫與編譯 C/C&#43;&#43; 程式" />
-<meta property="og:description" content="" />
+  <meta property="og:title" content="Programming Tips and Useless Knowledge" />
+<meta property="og:description" content="20240306 讀書會簡報" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://hypersoweak.github.io/posts/tutorials/cpp-with-vscode/" /><meta property="og:image" content="https://hypersoweak.github.io/posts/tutorials/cpp-with-vscode/featured.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-02-14T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-02-14T00:00:00+00:00" />
+<meta property="og:url" content="https://hypersoweak.github.io/external/programming-tips/" /><meta property="article:section" content="external" />
+<meta property="article:published_time" content="2024-03-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-03-14T00:00:00+00:00" />
 
 
-  <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://hypersoweak.github.io/posts/tutorials/cpp-with-vscode/featured.png" /><meta name="twitter:title" content="使用 VS Code 撰寫與編譯 C/C&#43;&#43; 程式"/>
-<meta name="twitter:description" content=""/>
+  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Programming Tips and Useless Knowledge"/>
+<meta name="twitter:description" content="20240306 讀書會簡報"/>
 
   
   <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "文章",
-    "name": "使用 VS Code 撰寫與編譯 C\/C\u002b\u002b 程式",
-    "headline": "使用 VS Code 撰寫與編譯 C\/C\u002b\u002b 程式",
+    "articleSection": "外部連結",
+    "name": "Programming Tips and Useless Knowledge",
+    "headline": "Programming Tips and Useless Knowledge",
     
-    
+    "abstract": "20240306 讀書會簡報",
     "inLanguage": "zh-tw",
-    "url" : "https:\/\/hypersoweak.github.io\/posts\/tutorials\/cpp-with-vscode\/",
+    "url" : "https:\/\/hypersoweak.github.io\/external\/programming-tips\/",
     "author" : {
       "@type": "Person",
       "name": "HyperSoWeak"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-02-14T00:00:00\u002b00:00",
-    "datePublished": "2024-02-14T00:00:00\u002b00:00",
+    "dateCreated": "2024-03-14T00:00:00\u002b00:00",
+    "datePublished": "2024-03-14T00:00:00\u002b00:00",
     
-    "dateModified": "2024-02-14T00:00:00\u002b00:00",
+    "dateModified": "2024-03-14T00:00:00\u002b00:00",
     
-    "keywords": ["VS Code","C / C++"],
+    
     
     "mainEntityOfPage": "true",
-    "wordCount": "1079"
+    "wordCount": "0"
   }]
   </script>
 
@@ -493,6 +492,12 @@
   
   
   
+ 
+  
+   
+  
+ 
+
 
 
 <div id="hero" class="h-[150px] md:h-[200px]"></div>
@@ -501,7 +506,7 @@
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/posts/tutorials/cpp-with-vscode/featured_hucfa03ee5217120ca5c8c9fcc5c210ad4_147627_1200x0_resize_box_3.png);">
+    style="background-image:url(/img/default_bg_hu584c864c9e1f8c9c818f036182b4b423_938423_1200x0_resize_q75_box.jpg);">
     
 
 
@@ -527,7 +532,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      使用 VS Code 撰寫與編譯 C/C++ 程式
+      Programming Tips and Useless Knowledge
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -551,23 +556,13 @@
 
 
 
-  
 
 
 
-  
 
 
 
-  
 
-
-
-  
-
-
-
-  
 
 
 
@@ -580,55 +575,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-02-14 00:00:00 &#43;0000 UTC">2024-02-14</time><span class="px-2 text-primary-500">&middot;</span><span>1079 字</span><span class="px-2 text-primary-500">&middot;</span><span title="預計閱讀時間">3 分鐘</span><span class="px-2 text-primary-500">&middot;</span><span>
-    
-    <span id="views_posts\tutorials\cpp-with-vscode\index.md" 
-    
-        class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span> 
-    <span class="inline-block align-text-bottom">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
-  </span>
-
-</span>
-</span><span class="px-2 text-primary-500">&middot;</span><span>
-    
-    <span id="likes_posts\tutorials\cpp-with-vscode\index.md" 
-    
-        class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="likes">loading</span> 
-    <span class="inline-block align-text-bottom">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
-  </span>
-
-</span>
-</span><span class="px-2 text-primary-500">&middot;</span><span>
-    <button id="button_likes"
-        class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-        onclick="process_article()">
-        <span id="button_likes_heart" style="display:none" class="inline-block align-text-bottom">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
-  </span>
-
- </span>
-        <span id="button_likes_emtpty_heart" class="inline-block align-text-bottom">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-<path fill="currentColor" d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"/></svg>
-  </span>
-
-</span>
-        <span id="button_likes_text">&nbsp;Like</span>
-    </button>
-</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-03-14 00:00:00 &#43;0000 UTC">2024-03-14</time><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.ccc8b2a0c4505216444ca25530c7328aa0bef94f43dabaf3e598e1b4271de9eec76c1cb35917471a4f7ccb8d84051b3acef42baa30724ac3a667fcf1fec4432a.js" integrity="sha512-zMiyoMRQUhZETKJVMMcyiqC&#43;&#43;U9D2rrz5ZjhtCcd6e7HbByzWRdHGk98y42EBRs6zvQrqjBySsOmZ/zx/sRDKg=="></script>
@@ -667,37 +614,9 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E5%AD%B8/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    教學
-  </span>
-</span>
-  </span>
   
   
   
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vs-code/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    VS Code
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/c-/-c&#43;&#43;/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    C / C&#43;&#43;
-  </span>
-</span>
-  </span>
   
   
   
@@ -816,50 +735,7 @@
   
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
     
-     <div
-      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
-      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
-
-         <details open class="toc-right mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
-  <summary
-    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    目錄
-  </summary>
-  <div
-    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#安裝編譯器-mingw">安裝編譯器 (MinGW)</a></li>
-    <li><a href="#加入-path-環境變數">加入 PATH 環境變數</a></li>
-    <li><a href="#使用-vs-code">使用 VS Code</a></li>
-    <li><a href="#cc-extension-pack">C/C++ Extension Pack</a></li>
-    <li><a href="#延伸閱讀">延伸閱讀</a></li>
-  </ul>
-</nav>
-  </div>
-</details>
-<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
-  <summary
-    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    目錄
-  </summary>
-  <div
-    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#安裝編譯器-mingw">安裝編譯器 (MinGW)</a></li>
-    <li><a href="#加入-path-環境變數">加入 PATH 環境變數</a></li>
-    <li><a href="#使用-vs-code">使用 VS Code</a></li>
-    <li><a href="#cc-extension-pack">C/C++ Extension Pack</a></li>
-    <li><a href="#延伸閱讀">延伸閱讀</a></li>
-  </ul>
-</nav>
-  </div>
-</details>
-
-   </div>
-      </div>
-      
+    
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
@@ -867,402 +743,7 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <blockquote>
-<p>有鑑於 C/C++ 的環境建置真的有夠麻煩，我自己也踩了好幾次坑，因此寫了這篇文章，希望大家都不要被 C 系列荼毒 &gt;&lt;</p>
-</blockquote>
-<p>本文適用於 Windows 環境。</p>
-
-
-<h2 class="relative group">安裝編譯器 (MinGW) 
-    <div id="%E5%AE%89%E8%A3%9D%E7%B7%A8%E8%AD%AF%E5%99%A8-mingw" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%AE%89%E8%A3%9D%E7%B7%A8%E8%AD%AF%E5%99%A8-mingw" aria-label="定位點">#</a>
-    </span>        
-    
-</h2>
-<p><a href="https://sourceforge.net/projects/mingw/files/Installer/"   target="_blank">
-    下載 MinGW setup</a> (個人認為 MinGW 載點真的有夠難找，而且各式版本一大堆很混亂)</p>
-<p>按 Download Latest Version (綠色按鈕)</p>
-<p>下載安裝完成後會自動開啟 MinGW Installation Manager
-
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        srcset="
-        /posts/tutorials/cpp-with-vscode/images/image_hu4a1dc560395e0f0f7e7b51793818a7ea_128610_330x0_resize_box_3.png 330w,
-        /posts/tutorials/cpp-with-vscode/images/image_hu4a1dc560395e0f0f7e7b51793818a7ea_128610_660x0_resize_box_3.png 660w,
-        /posts/tutorials/cpp-with-vscode/images/image_hu4a1dc560395e0f0f7e7b51793818a7ea_128610_1024x0_resize_box_3.png 1024w,
-        /posts/tutorials/cpp-with-vscode/images/image_hu4a1dc560395e0f0f7e7b51793818a7ea_128610_1320x0_resize_box_3.png 2x"
-        src="/posts/tutorials/cpp-with-vscode/images/image_hu4a1dc560395e0f0f7e7b51793818a7ea_128610_660x0_resize_box_3.png"
-        alt="alt text"
-      />
-      
-      
-    </figure>
-  
-
-</p>
-<p>勾選 mingw32-base 及 mingw32-gcc-g++，按 Mark for Installation
-
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        srcset="
-        /posts/tutorials/cpp-with-vscode/images/image-1_hu62b8224a0b326d94ad8201d0e6ee9272_53522_330x0_resize_box_3.png 330w,
-        /posts/tutorials/cpp-with-vscode/images/image-1_hu62b8224a0b326d94ad8201d0e6ee9272_53522_660x0_resize_box_3.png 660w,
-        /posts/tutorials/cpp-with-vscode/images/image-1_hu62b8224a0b326d94ad8201d0e6ee9272_53522_1024x0_resize_box_3.png 1024w,
-        /posts/tutorials/cpp-with-vscode/images/image-1_hu62b8224a0b326d94ad8201d0e6ee9272_53522_1320x0_resize_box_3.png 2x"
-        src="/posts/tutorials/cpp-with-vscode/images/image-1_hu62b8224a0b326d94ad8201d0e6ee9272_53522_660x0_resize_box_3.png"
-        alt="alt text"
-      />
-      
-      
-    </figure>
-  
-
-</p>
-<p>接下來按左上角 Installation &gt; Apply Changes
-
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        srcset="
-        /posts/tutorials/cpp-with-vscode/images/image-2_hu32c06ecd8e10c0aca98b5a5ba4be6946_41610_330x0_resize_box_3.png 330w,
-        /posts/tutorials/cpp-with-vscode/images/image-2_hu32c06ecd8e10c0aca98b5a5ba4be6946_41610_660x0_resize_box_3.png 660w,
-        /posts/tutorials/cpp-with-vscode/images/image-2_hu32c06ecd8e10c0aca98b5a5ba4be6946_41610_1024x0_resize_box_3.png 1024w,
-        /posts/tutorials/cpp-with-vscode/images/image-2_hu32c06ecd8e10c0aca98b5a5ba4be6946_41610_1320x0_resize_box_3.png 2x"
-        src="/posts/tutorials/cpp-with-vscode/images/image-2_hu32c06ecd8e10c0aca98b5a5ba4be6946_41610_660x0_resize_box_3.png"
-        alt="alt text"
-      />
-      
-      
-    </figure>
-  
-
-</p>
-<p>按 Apply，就會開始安裝編譯器跟標頭檔等等的文件
-
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        srcset="
-        /posts/tutorials/cpp-with-vscode/images/image-3_hua123a508622d9117e43ce0f90266ee36_91018_330x0_resize_box_3.png 330w,
-        /posts/tutorials/cpp-with-vscode/images/image-3_hua123a508622d9117e43ce0f90266ee36_91018_660x0_resize_box_3.png 660w,
-        /posts/tutorials/cpp-with-vscode/images/image-3_hua123a508622d9117e43ce0f90266ee36_91018_1024x0_resize_box_3.png 1024w,
-        /posts/tutorials/cpp-with-vscode/images/image-3_hua123a508622d9117e43ce0f90266ee36_91018_1320x0_resize_box_3.png 2x"
-        src="/posts/tutorials/cpp-with-vscode/images/image-3_hua123a508622d9117e43ce0f90266ee36_91018_660x0_resize_box_3.png"
-        alt="alt text"
-      />
-      
-      
-    </figure>
-  
-
-</p>
-<p>之後等它安裝完成後就可以把 Installation Manager 關了</p>
-
-
-<h2 class="relative group">加入 PATH 環境變數 
-    <div id="%E5%8A%A0%E5%85%A5-path-%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%8A%A0%E5%85%A5-path-%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8" aria-label="定位點">#</a>
-    </span>        
-    
-</h2>
-<p>PATH 環境變數基本上就是「系統要到哪些路徑底下找執行檔」，不然每次要使用 gcc 都要指定絕對路徑。</p>
-<p>非必要，VS Code 本身可以設定編譯器路徑，但還是建議設定一下環境變數比較方便，可以在 terminal 中任何一個目錄下使用 gcc/g++ 指令編譯。</p>
-<p>上個步驟的 MinGW 安裝完成後，我們去剛剛安裝的路徑，找到名為bin的資料夾並複製路徑，以我的系統為例就是 <code>C:\MinGW\bin</code>。</p>
-<p>在搜尋欄搜索 <code>environment variables</code>，或者如果系統語言是中文就找 <code>環境變數</code>，把他打開。
-
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        srcset="
-        /posts/tutorials/cpp-with-vscode/images/image-4_hu7a18f15863a9d54db3ffe2cacd181952_888233_330x0_resize_box_3.png 330w,
-        /posts/tutorials/cpp-with-vscode/images/image-4_hu7a18f15863a9d54db3ffe2cacd181952_888233_660x0_resize_box_3.png 660w,
-        /posts/tutorials/cpp-with-vscode/images/image-4_hu7a18f15863a9d54db3ffe2cacd181952_888233_1024x0_resize_box_3.png 1024w,
-        /posts/tutorials/cpp-with-vscode/images/image-4_hu7a18f15863a9d54db3ffe2cacd181952_888233_1320x0_resize_box_3.png 2x"
-        src="/posts/tutorials/cpp-with-vscode/images/image-4_hu7a18f15863a9d54db3ffe2cacd181952_888233_660x0_resize_box_3.png"
-        alt="alt text"
-      />
-      
-      
-    </figure>
-  
-
-</p>
-<p>按 <code>Environment Variables...</code>
-
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        srcset="
-        /posts/tutorials/cpp-with-vscode/images/image-5_hu2eac90901c955b71571257eaa2312596_27842_330x0_resize_box_3.png 330w,
-        /posts/tutorials/cpp-with-vscode/images/image-5_hu2eac90901c955b71571257eaa2312596_27842_660x0_resize_box_3.png 660w,
-        /posts/tutorials/cpp-with-vscode/images/image-5_hu2eac90901c955b71571257eaa2312596_27842_1024x0_resize_box_3.png 1024w,
-        /posts/tutorials/cpp-with-vscode/images/image-5_hu2eac90901c955b71571257eaa2312596_27842_1320x0_resize_box_3.png 2x"
-        src="/posts/tutorials/cpp-with-vscode/images/image-5_hu2eac90901c955b71571257eaa2312596_27842_660x0_resize_box_3.png"
-        alt="alt text"
-      />
-      
-      
-    </figure>
-  
-
-</p>
-<p>接下來到 User variables 那邊選擇 Path，再按 <code>Edit...</code>
-
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        srcset="
-        /posts/tutorials/cpp-with-vscode/images/image-6_hu7a18f15863a9d54db3ffe2cacd181952_919871_330x0_resize_box_3.png 330w,
-        /posts/tutorials/cpp-with-vscode/images/image-6_hu7a18f15863a9d54db3ffe2cacd181952_919871_660x0_resize_box_3.png 660w,
-        /posts/tutorials/cpp-with-vscode/images/image-6_hu7a18f15863a9d54db3ffe2cacd181952_919871_1024x0_resize_box_3.png 1024w,
-        /posts/tutorials/cpp-with-vscode/images/image-6_hu7a18f15863a9d54db3ffe2cacd181952_919871_1320x0_resize_box_3.png 2x"
-        src="/posts/tutorials/cpp-with-vscode/images/image-6_hu7a18f15863a9d54db3ffe2cacd181952_919871_660x0_resize_box_3.png"
-        alt="alt text"
-      />
-      
-      
-    </figure>
-  
-
-
-要選 System variables 的 Path 也是可以，差別在於前者只作用於目前使用者，而後者則是整個系統的所有使用者共用，也就是日後使用其他帳號就不用重新設定一次。</p>
-<p>按 New 然後把剛剛 bin 資料夾的路徑貼上去
-
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        srcset="
-        /posts/tutorials/cpp-with-vscode/images/image-7_hu8415a2f6a502ce6bc99ac61906a9c367_27758_330x0_resize_box_3.png 330w,
-        /posts/tutorials/cpp-with-vscode/images/image-7_hu8415a2f6a502ce6bc99ac61906a9c367_27758_660x0_resize_box_3.png 660w,
-        /posts/tutorials/cpp-with-vscode/images/image-7_hu8415a2f6a502ce6bc99ac61906a9c367_27758_1024x0_resize_box_3.png 1024w,
-        /posts/tutorials/cpp-with-vscode/images/image-7_hu8415a2f6a502ce6bc99ac61906a9c367_27758_1320x0_resize_box_3.png 2x"
-        src="/posts/tutorials/cpp-with-vscode/images/image-7_hu8415a2f6a502ce6bc99ac61906a9c367_27758_660x0_resize_box_3.png"
-        alt="alt text"
-      />
-      
-      
-    </figure>
-  
-
-</p>
-<p>接下來一直按 OK 儲存更改並把視窗關掉。</p>
-<p>打開 terminal (搜尋 cmd 或 powershell) 輸入</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gcc --version
-</span></span><span class="line"><span class="cl">g++ --version
-</span></span></code></pre></div><p>如果有出現版本訊息就代表設定好環境變數了！
-
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        srcset="
-        /posts/tutorials/cpp-with-vscode/images/image-8_hu223df22c1f225c4b1153bc2f332ad5e4_29615_330x0_resize_box_3.png 330w,
-        /posts/tutorials/cpp-with-vscode/images/image-8_hu223df22c1f225c4b1153bc2f332ad5e4_29615_660x0_resize_box_3.png 660w,
-        /posts/tutorials/cpp-with-vscode/images/image-8_hu223df22c1f225c4b1153bc2f332ad5e4_29615_1024x0_resize_box_3.png 1024w,
-        /posts/tutorials/cpp-with-vscode/images/image-8_hu223df22c1f225c4b1153bc2f332ad5e4_29615_1320x0_resize_box_3.png 2x"
-        src="/posts/tutorials/cpp-with-vscode/images/image-8_hu223df22c1f225c4b1153bc2f332ad5e4_29615_660x0_resize_box_3.png"
-        alt="alt text"
-      />
-      
-      
-    </figure>
-  
-
-</p>
-
-
-<h2 class="relative group">使用 VS Code 
-    <div id="%E4%BD%BF%E7%94%A8-vs-code" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%BD%BF%E7%94%A8-vs-code" aria-label="定位點">#</a>
-    </span>        
-    
-</h2>
-<p>(設定完 PATH 環境變數需重啟 VS Code 才會生效)</p>
-<p>創建一個資料夾並拖到 VS Code 圖示上來開啟專案。(或者打開 VS Code，選擇<code>File &gt; Open Folder</code>)</p>
-<p>或許會跳提示框，按 Yes, I trust the authors 就好。</p>
-<p>安裝 Code Runner 擴充包，可參考<a href="/posts/tutorial/python-with-vscode#%e4%b8%80%e9%8d%b5%e5%9f%b7%e8%a1%8c%e7%a8%8b%e5%bc%8f"  >
-    使用 VS Code 撰寫 Python 程式</a>的相關設定。</p>
-<blockquote>
-<p>💡<strong>Tips</strong>:
-如果使用C/C++的目的是<strong>競程</strong>的話，要把 Run In Terminal 打開，才有辦法在 terminal 輸入測資。</p>
-</blockquote>
-<p>按右上角三角形或快捷鍵<code>Ctrl+Alt+N</code>就可以在 terminal 看到執行結果了！
-(參考 <a href="/posts/tutorials/vscode-shortcuts/"  >
-    常用 VS Code 快捷鍵</a>)
-
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        srcset="
-        /posts/tutorials/cpp-with-vscode/images/image-9_huc69485f466a31e2290d6ad83d970d5a4_73306_330x0_resize_box_3.png 330w,
-        /posts/tutorials/cpp-with-vscode/images/image-9_huc69485f466a31e2290d6ad83d970d5a4_73306_660x0_resize_box_3.png 660w,
-        /posts/tutorials/cpp-with-vscode/images/image-9_huc69485f466a31e2290d6ad83d970d5a4_73306_1024x0_resize_box_3.png 1024w,
-        /posts/tutorials/cpp-with-vscode/images/image-9_huc69485f466a31e2290d6ad83d970d5a4_73306_1320x0_resize_box_3.png 2x"
-        src="/posts/tutorials/cpp-with-vscode/images/image-9_huc69485f466a31e2290d6ad83d970d5a4_73306_660x0_resize_box_3.png"
-        alt="alt text"
-      />
-      
-      
-    </figure>
-  
-
-</p>
-
-
-<h2 class="relative group">C/C++ Extension Pack 
-    <div id="cc-extension-pack" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#cc-extension-pack" aria-label="定位點">#</a>
-    </span>        
-    
-</h2>
-<p>C/C++ Extension Pack 是 Microsoft 的擴充包。</p>
-<p>Debug 功能對於比較大型的專案十分有用，不過如果是要打競程的話可能用不太到，可以暫時忽略這部分(?</p>
-<p>安裝完之後會發現右上角三角形除了 Run Code 之外，還多了 Debug 跟 Run C/C++ File 的選項。</p>
-<p>執行之後會產生<code>.vscode</code>資料夾，裡面可能會有<code>c_cpp_properties.json</code> <code>tasks.json</code> <code>launch.json</code>檔案。</p>
-<p><code>c_cpp_properties.json</code>裡可以定義像是編譯器路徑、intellisense(程式代碼完成輔助功能)、C++版本、include path之類的設定；而<code>tasks.json</code>可以設定執行的命令(可以取代 makefile 但不推薦)；<code>launch.json</code>則是用來 Debug 的。</p>
-<p>這邊就不細講，剩下的功能交給讀者自行摸索了～</p>
-
-
-<h2 class="relative group">延伸閱讀 
-    <div id="%E5%BB%B6%E4%BC%B8%E9%96%B1%E8%AE%80" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%BB%B6%E4%BC%B8%E9%96%B1%E8%AE%80" aria-label="定位點">#</a>
-    </span>        
-    
-</h2>
-<p><a href="https://code.visualstudio.com/docs/cpp/c-cpp-properties-schema-reference"   target="_blank">
-    c_cpp_properties.json reference</a></p>
-
+          
         </div>
                 
         
@@ -1275,7 +756,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://hypersoweak.github.io/posts/tutorials/cpp-with-vscode/&amp;title=%e4%bd%bf%e7%94%a8%20VS%20Code%20%e6%92%b0%e5%af%ab%e8%88%87%e7%b7%a8%e8%ad%af%20C/C&#43;&#43;%20%e7%a8%8b%e5%bc%8f"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://hypersoweak.github.io/external/programming-tips/&amp;title=Programming%20Tips%20and%20Useless%20Knowledge"
       title="分享到 LinkedIn"
       aria-label="分享到 LinkedIn"
       >
@@ -1294,7 +775,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://hypersoweak.github.io/posts/tutorials/cpp-with-vscode/&amp;text=%e4%bd%bf%e7%94%a8%20VS%20Code%20%e6%92%b0%e5%af%ab%e8%88%87%e7%b7%a8%e8%ad%af%20C/C&#43;&#43;%20%e7%a8%8b%e5%bc%8f"
+      href="https://twitter.com/intent/tweet/?url=https://hypersoweak.github.io/external/programming-tips/&amp;text=Programming%20Tips%20and%20Useless%20Knowledge"
       title="推到 Twitter"
       aria-label="推到 Twitter"
       >
@@ -1312,7 +793,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://hypersoweak.github.io/posts/tutorials/cpp-with-vscode/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8%20VS%20Code%20%e6%92%b0%e5%af%ab%e8%88%87%e7%b7%a8%e8%ad%af%20C/C&#43;&#43;%20%e7%a8%8b%e5%bc%8f"
+      href="https://reddit.com/submit/?url=https://hypersoweak.github.io/external/programming-tips/&amp;resubmit=true&amp;title=Programming%20Tips%20and%20Useless%20Knowledge"
       title="發送到 Reddit"
       aria-label="發送到 Reddit"
       >
@@ -1331,7 +812,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://hypersoweak.github.io/posts/tutorials/cpp-with-vscode/&amp;description=%e4%bd%bf%e7%94%a8%20VS%20Code%20%e6%92%b0%e5%af%ab%e8%88%87%e7%b7%a8%e8%ad%af%20C/C&#43;&#43;%20%e7%a8%8b%e5%bc%8f"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://hypersoweak.github.io/external/programming-tips/&amp;description=Programming%20Tips%20and%20Useless%20Knowledge"
       title="釘到 Pinterest"
       aria-label="釘到 Pinterest"
       >
@@ -1350,7 +831,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://hypersoweak.github.io/posts/tutorials/cpp-with-vscode/&amp;quote=%e4%bd%bf%e7%94%a8%20VS%20Code%20%e6%92%b0%e5%af%ab%e8%88%87%e7%b7%a8%e8%ad%af%20C/C&#43;&#43;%20%e7%a8%8b%e5%bc%8f"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://hypersoweak.github.io/external/programming-tips/&amp;quote=Programming%20Tips%20and%20Useless%20Knowledge"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -1369,7 +850,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://hypersoweak.github.io/posts/tutorials/cpp-with-vscode/&amp;subject=%e4%bd%bf%e7%94%a8%20VS%20Code%20%e6%92%b0%e5%af%ab%e8%88%87%e7%b7%a8%e8%ad%af%20C/C&#43;&#43;%20%e7%a8%8b%e5%bc%8f"
+      href="mailto:?body=https://hypersoweak.github.io/external/programming-tips/&amp;subject=Programming%20Tips%20and%20Useless%20Knowledge"
       title="以電子郵件發送"
       aria-label="以電子郵件發送"
       >
@@ -1388,7 +869,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://hypersoweak.github.io/posts/tutorials/cpp-with-vscode/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8%20VS%20Code%20%e6%92%b0%e5%af%ab%e8%88%87%e7%b7%a8%e8%ad%af%20C/C&#43;&#43;%20%e7%a8%8b%e5%bc%8f"
+      href="https://api.whatsapp.com/send?text=https://hypersoweak.github.io/external/programming-tips/&amp;resubmit=true&amp;title=Programming%20Tips%20and%20Useless%20Knowledge"
       title=""
       aria-label=""
       >
@@ -1407,7 +888,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://hypersoweak.github.io/posts/tutorials/cpp-with-vscode/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8%20VS%20Code%20%e6%92%b0%e5%af%ab%e8%88%87%e7%b7%a8%e8%ad%af%20C/C&#43;&#43;%20%e7%a8%8b%e5%bc%8f"
+      href="https://t.me/share/url?url=https://hypersoweak.github.io/external/programming-tips/&amp;resubmit=true&amp;title=Programming%20Tips%20and%20Useless%20Knowledge"
       title=""
       aria-label=""
       >
@@ -1433,11 +914,11 @@
   
   
 
-  <a href="/posts/tutorials/python-with-vscode/" class="min-w-full">
+  <a href="/posts/tutorials/cpp-with-vscode/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/tutorials/python-with-vscode/featured_huceb13ae01c976d8fcd3ff4536fb5c1de_324311_600x0_resize_q75_box.jpeg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/tutorials/cpp-with-vscode/featured_hucfa03ee5217120ca5c8c9fcc5c210ad4_147627_600x0_resize_box_3.png);"></div>
         
       
 
@@ -1445,7 +926,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/tutorials/python-with-vscode/">使用 VS Code 撰寫 Python 程式</div>
+          href="/posts/tutorials/cpp-with-vscode/">使用 VS Code 撰寫與編譯 C/C++ 程式</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1492,9 +973,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-02-05 00:00:00 &#43;0000 UTC">2024-02-05</time><span class="px-2 text-primary-500">&middot;</span><span>945 字</span><span class="px-2 text-primary-500">&middot;</span><span title="預計閱讀時間">2 分鐘</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2024-02-14 00:00:00 &#43;0000 UTC">2024-02-14</time><span class="px-2 text-primary-500">&middot;</span><span>1079 字</span><span class="px-2 text-primary-500">&middot;</span><span title="預計閱讀時間">3 分鐘</span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_posts\tutorials\python-with-vscode\index.md" 
+    <span id="views_posts\tutorials\cpp-with-vscode\index.md" 
     
         class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span> 
     <span class="inline-block align-text-bottom">
@@ -1507,7 +988,7 @@
 </span>
 </span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="likes_posts\tutorials\python-with-vscode\index.md" 
+    <span id="likes_posts\tutorials\cpp-with-vscode\index.md" 
     
         class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="likes">loading</span> 
     <span class="inline-block align-text-bottom">
@@ -1560,160 +1041,10 @@
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/python/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/c-/-c&#43;&#43;/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Python
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-        </div>
-
-        
-        <div class="py-1 prose dark:prose-invert">
-          
-        </div>
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-  
-  
-
-  <a href="/posts/tutorials/vscode-shortcuts/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/tutorials/vscode-shortcuts/featured_hu5459c0360c2b0cb7a147d2df0eb350ca_362383_600x0_resize_q75_box.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/tutorials/vscode-shortcuts/">常用 VS Code 快捷鍵</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-02-07 00:00:00 &#43;0000 UTC">2024-02-07</time><span class="px-2 text-primary-500">&middot;</span><span>350 字</span><span class="px-2 text-primary-500">&middot;</span><span title="預計閱讀時間">1 分鐘</span><span class="px-2 text-primary-500">&middot;</span><span>
-    
-    <span id="views_posts\tutorials\vscode-shortcuts\index.md" 
-    
-        class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span> 
-    <span class="inline-block align-text-bottom">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
-  </span>
-
-</span>
-</span><span class="px-2 text-primary-500">&middot;</span><span>
-    
-    <span id="likes_posts\tutorials\vscode-shortcuts\index.md" 
-    
-        class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="likes">loading</span> 
-    <span class="inline-block align-text-bottom">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
-  </span>
-
-</span>
-</span>
-  
-
-  
-  
-</div>
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E5%AD%B8/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    教學
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vs-code/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    VS Code
+    C / C&#43;&#43;
   </span>
 </span>
   </span>
@@ -1897,6 +1228,156 @@
     </div>
   </a>
   
+  
+
+  <a href="/posts/tutorials/vscode-shortcuts/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/tutorials/vscode-shortcuts/featured_hu5459c0360c2b0cb7a147d2df0eb350ca_362383_600x0_resize_q75_box.jpg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/tutorials/vscode-shortcuts/">常用 VS Code 快捷鍵</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-02-07 00:00:00 &#43;0000 UTC">2024-02-07</time><span class="px-2 text-primary-500">&middot;</span><span>350 字</span><span class="px-2 text-primary-500">&middot;</span><span title="預計閱讀時間">1 分鐘</span><span class="px-2 text-primary-500">&middot;</span><span>
+    
+    <span id="views_posts\tutorials\vscode-shortcuts\index.md" 
+    
+        class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span> 
+    <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
+  </span>
+
+</span>
+</span><span class="px-2 text-primary-500">&middot;</span><span>
+    
+    <span id="likes_posts\tutorials\vscode-shortcuts\index.md" 
+    
+        class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="likes">loading</span> 
+    <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+  </span>
+
+</span>
+</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E5%AD%B8/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    教學
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vs-code/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    VS Code
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+        <div class="py-1 prose dark:prose-invert">
+          
+        </div>
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+  
 </section>
 
   
@@ -1904,8 +1385,8 @@
      
     
      <script>
-        var oid = "views_posts\\tutorials\\cpp-with-vscode\\index.md"
-        var oid_likes = "likes_posts\\tutorials\\cpp-with-vscode\\index.md"
+        var oid = "views_external\\programming-tips\\index.md"
+        var oid_likes = "likes_external\\programming-tips\\index.md"
       </script>
       
       
@@ -1917,56 +1398,13 @@
 
     
   
-    
-    
-    
-    <div class="pt-8">
-      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
-      <div class="flex justify-between pt-3">
-        <span>
-          
-            <a class="flex group mr-3" href="/posts/tutorials/linux-file-permission/">
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Linux 修改檔案權限</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-02-08 00:00:00 &#43;0000 UTC">2024-02-08</time>
-                  
-                </span>
-              </span>
-            </a>
-          
-        </span>
-        <span>
-          
-        </span>
-      </div>
-    </div>
-  
 
 
     
   </footer>
 </article>
 
-      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
-  <a href="#the-top"
-    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
-    aria-label="捲動到頁頂" title="捲動到頁頂">
-    &uarr;
-  </a>
-</div>
+      
     </main><footer id="site-footer" class="py-10 print:hidden">
   
   
